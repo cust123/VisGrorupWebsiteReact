@@ -188,7 +188,7 @@
 body {
   font-family: "gorditaregular";
   font-weight: normal;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
   line-height: 1.66em;
   color: var(--text-color);
@@ -213,28 +213,28 @@ h6 {
 }
 .h1,
 h1 {
-  font-size: 100px;
+  font-size: 80px;
 }
 .h2,
 h2 {
-  font-size: 52px;
+  font-size: 42px;
 }
 .h3,
 h3 {
-  font-size: 36px;
+  font-size: 26px;
 }
 .h4,
 h4 {
-  font-size: 24px;
+  font-size: 18px;
   font-family: "gorditamedium";
 }
 .h5,
 h5 {
-  font-size: 20px;
+  font-size: 16px;
 }
 .h6,
 h6 {
-  font-size: 15px;
+  font-size: 14px;
 }
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
@@ -284,6 +284,10 @@ h6 {
 }
 .text-lg {
   font-size: 24px;
+  line-height: 1.7em;
+}
+.text-normal {
+  font-size: 18px;
   line-height: 1.7em;
 }
 .cs-screen {
@@ -351,10 +355,11 @@ h6 {
 .title-style-one .title {
   font-family: "Recoleta";
   font-weight: normal;
-  font-size: 72px;
+  font-size: 52px;
   line-height: 1.16em;
   margin-bottom: 0;
 }
+
 .title-style-one.white-vr .title {
   color: #fff;
 }

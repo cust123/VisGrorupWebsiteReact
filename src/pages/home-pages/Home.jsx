@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import img1 from "../../assets/images/media/img_70.png";
 import img2 from "../../assets/images/media/img_71.png";
+import img3 from "../../assets/images/media/img_69.png";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 
 import CounterUp from "../../components/consulting-agency/CounterUp";
 import FeatureSectionFour from "../../components/creative-agency/FeatureSectionFour";
 import FeatureSlider from "../../components/consulting-agency/FeatureSlider";
 import Header from "../../components/consulting-agency/Header";
-import Hero from "../../components/consulting-agency/Hero";
+
 import TeamSlider from "../../components/consulting-agency/TeamSlider";
 import VideoFeatureList from "../../components/consulting-agency/VideoFeatureList";
 import FeedbackSliderFour from "../../components/creative-agency/FeedbackSliderFour";
@@ -32,7 +33,24 @@ const Home = () => {
         <div className="scroll-bar"></div>
         {/* End .scroll-bar */}
 
-        <Hero />
+        <div className="banner-content h-100 d-md-flex align-items-center justify-content-between">
+      <div className="text-wrapper">
+        <h1 className="hero-heading">Vis Group.</h1>
+        <p className="hero-sub-heading text-normal">
+          We are helping clients to create Durable and high quality Sloutions
+          with our talented expert.
+        </p>
+        <Link to="/contact-v3" className="theme-btn-eleven ripple-btn">
+          Consult with an expert now!
+        </Link>
+      </div>
+      {/* <!-- /.text-wrapper --> */}
+
+      <div className="img-wrapper position-relative">
+        <img src={img3} alt="media" />
+      </div>
+      {/* End .img-wrapper */}
+    </div>
         {/* <!-- /.banner-content --> */}
       </div>
       {/* Banner: End */}
@@ -45,11 +63,11 @@ const Home = () => {
               <div className="col-xxl-4 col-lg-4" data-aos="fade-right">
                 <div className="title-style-one">
                   <div className="upper-title">What we do</div>
-                  <h2 className="title">
+                  <h4 className="title">
                     Our <span>Services</span> .
-                  </h2>
+                  </h4>
                 </div>
-                <p className="meta-info-text text-lg">
+                <p className="meta-info-text text-normal">
                   Vis Group offers Services in Telecommunication, Network
                   Benchmarking, infotainment systems testing, Quality Assurance
                   and Software Development to its global clients.
@@ -85,9 +103,11 @@ const Home = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <div className="title-style-nine">
+              <div className="title-style-one">
                 <div className="upper-title">Why choose us</div>
-                <h2 className="title">We solve your Problem.</h2>
+                <h4 className="title">
+                    We Solve Your Problem.
+                  </h4>
               </div>
             </div>
             <div className="col-lg-5 ms-auto">
@@ -109,14 +129,14 @@ const Home = () => {
               >
                 <div className="text-wrapper">
                   {/* End Video trigger wrapper */}
-                  <div className="title-style-two">
+                  <div className="title-style-one">
                     <h3 className="title">
                       We’ve been helping <span>customer</span> globally.
                     </h3>
                   </div>
-                  <p className="meta-info-text text-lg">
+                  <p className=" text-normal">
                     Lorem ipsum dolor sit amet, consecte adiel sed do eiusmod
-                    tempor incidi ut labore split.
+                    tempor incidi ut labore split.In ad in labore exercitation consectetur labore veniam veniam ut dolor eiusmod sint.Enim dolor occaecat eiusmod voluptate labore esse incididunt.
                   </p>
                   <Link to="/about-v1" className="theme-btn-two">
                     More about us
