@@ -1,0 +1,95 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import CustomLink from "./CustomLink";
+import logo from "../../../../assets/images/logo/vCamp_01.png";
+import pagesMegaMenuData from "./dropdown-data/pagesMegaMenuData";
+
+const MegaMenuOne = () => {
+  return (
+    <ul className="navbar-nav">
+      <li className="d-block d-lg-none">
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="brand identity" width="127" />
+          </Link>
+        </div>
+      </li>
+      {/* End Brnad */}
+
+      {/* home */}
+      <li className="nav-item ">
+        <CustomLink to="/" className="nav-link">
+          <span>Home</span>
+        </CustomLink>
+      </li>
+
+      {/* About Us */}
+      <li className="nav-item ">
+        <CustomLink to="/about-us" className="nav-link">
+          <span>About Us</span>
+        </CustomLink>
+      </li>
+
+      {/* Sevices */}
+      <li className="nav-item dropdown mega-dropdown-md">
+        <button
+          className="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          data-bs-auto-close="outside"
+          aria-expanded="false"
+        >
+          Services
+        </button>
+        <ul className="dropdown-menu">
+          <li>
+            <div className="row">
+              {pagesMegaMenuData.map((item) => (
+                <div className="col-lg-3" key={item.id}>
+                  <div className="menu-column">
+                    <h6 className="mega-menu-title">{item.title}</h6>
+                    <ul className="style-none mega-dropdown-list">
+                      {item.menuList.map((list, i) => (
+                        <li key={i}>
+                          <CustomLink
+                            to={list.routeLink}
+                            className="dropdown-item"
+                          >
+                            <span>{list.name}</span>
+                          </CustomLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </li>
+        </ul>
+      </li>
+
+      {/* Projects */}
+      <li className="nav-item ">
+        <CustomLink to="/projects" className="nav-link">
+          <span>Projects</span>
+        </CustomLink>
+      </li>
+
+      {/* BLogs */}
+      <li className="nav-item ">
+        <CustomLink to="/blogs" className="nav-link">
+          <span>Blogs</span>
+        </CustomLink>
+      </li>
+
+      {/* Contact Us */}
+      <li className="nav-item ">
+        <CustomLink to="/contact-us" className="nav-link">
+          <span>Contact Us</span>
+        </CustomLink>
+      </li>
+    </ul>
+    //   {/* End navbar-nav */}
+  );
+};
+
+export default MegaMenuOne;
