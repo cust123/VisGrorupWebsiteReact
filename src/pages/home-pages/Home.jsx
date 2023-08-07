@@ -9,7 +9,6 @@ import FeatureSectionFour from "../../components/creative-agency/FeatureSectionF
 import FeatureSlider from "../../components/consulting-agency/FeatureSlider";
 import Header from "../../components/consulting-agency/Header";
 import Hero from "../../components/consulting-agency/Hero";
-import HeroSocial from "../../components/consulting-agency/HeroSocial";
 import TeamSlider from "../../components/consulting-agency/TeamSlider";
 import VideoFeatureList from "../../components/consulting-agency/VideoFeatureList";
 import FeedbackSliderFour from "../../components/creative-agency/FeedbackSliderFour";

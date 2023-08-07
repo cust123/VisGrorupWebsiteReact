@@ -32,7 +32,7 @@ const FooterSubscribe = ({ className = "" }) => {
           {/* End form */}
 
           <p>
-            Already sign up? <a href="#">unsubscribe</a>
+            Already sign up? <a href="bxtechnologies.net">unsubscribe</a>
           </p>
         </div>
         {/* <!-- /.subscribe-form --> */}
