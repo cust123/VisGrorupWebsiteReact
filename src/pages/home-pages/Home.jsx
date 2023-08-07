@@ -22,7 +22,7 @@ import Service2 from "../inner-pages/pages/support/components/Service2";
 const Home = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Vis-Group" />
+      <Seo title="Home" />
 
       <Sidebar />
 

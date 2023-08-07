@@ -16,22 +16,18 @@ import FancyBanner from "../components/startup/FancyBanner";
 import Address from "../components/business/Address";
 import Seo from "../components/common/seo/Seo";
 import banner from "../assets/images/media/img_46.jpg";
+import AccordionOne from "./inner-pages/pages/essentials/components/AccordionOne";
 
 const AboutUs = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Abut Us V1" />
+      <Seo title="Abut Us" />
 
       <Sidebar />
 
      
       <Header />
 
-      {/* <!-- 
-			=============================================
-				Inside Page Banner
-			============================================== 
-			--> */}
       <div
         className="inside-hero-two"
         style={{
@@ -46,11 +42,8 @@ const AboutUs = () => {
       </div>
       {/* <!-- /.inside-hero-one --> */}
 
-      {/* <!-- 
-			=============================================
-				Vcamp Text Block One
-			============================================== 
-			--> */}
+ 
+ 
       <div className="vcamp-text-block-one mt-200 lg-mt-120 position-static">
         <div className="container">
           <TextBlockOne />
@@ -64,6 +57,36 @@ const AboutUs = () => {
           />
         </div>
       </div>
+
+      <div className="vcamp-text-block-five mt-170 lg-mt-120">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-xxl-6 col-xl-7 col-lg-5">
+              <div className="text-wrapper">
+                <div className="title-style-five">
+                  <div className="upper-title">ABOUT US</div>
+                  <h2 className="title">
+                    We’ve been helping cutomer globally.
+                  </h2>
+                </div>
+              </div>
+            </div>
+            {/* End .col */}
+
+            <div className="col-xl-5 col-lg-6 ms-auto">
+              <div
+                className="accordion accordion-style-one md-mt-30"
+                id="accordionOne"
+              >
+                <AccordionOne />
+              </div>
+            </div>
+            {/* End .col */}
+          </div>
+        </div>
+      </div>
+
+
       {/* <!-- /.vcamp-text-block-one --> */}
 
       {/* <!--
