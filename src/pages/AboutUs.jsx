@@ -43,7 +43,7 @@ const AboutUs = () => {
 			--> */}
       <div className="inside-hero-one hero-spacing">
         <div className="container">
-          <h2 className="page-title font-recoleta">Inside Story</h2>
+          <h2 className="page-title font-recoleta">About Us</h2>
           <p>We’re empowering WordPress to do great things together</p>
         </div>
       </div>
