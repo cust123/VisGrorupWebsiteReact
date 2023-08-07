@@ -1,7 +1,7 @@
 import React from "react";
 import footerImg from "../assets/images/assets/ils_03.png";
 import Sidebar from "../components/common/header/sidebar/Sidebar";
-import Header from "../components/business/Header";
+import Header from "../components/consulting-agency/Header";
 import CopyrightFooter from "../components/common/footer/CopyrightFooter";
 import FooterMenuList from "../components/common/footer/FooterMenuList";
 import FooterSubscribe from "../components/creative-agency/FooterSubscribe";
@@ -15,25 +15,16 @@ import Blog from "../components/service-provider/Blog";
 import FancyBanner from "../components/startup/FancyBanner";
 import Address from "../components/business/Address";
 import Seo from "../components/common/seo/Seo";
+import banner from "../assets/images/media/img_46.jpg";
 
 const AboutUs = () => {
   return (
     <div className="main-page-wrapper">
       <Seo title="Abut Us V1" />
-      {/* End Seo Related data */}
 
-      {/* <!-- 
-      =============================================
-      Sidebar Nav
-      ============================================== 
-        --> */}
       <Sidebar />
 
-      {/* <!--
-        =============================================
-        Theme Main Menu
-        ==============================================
-        --> */}
+     
       <Header />
 
       {/* <!-- 
@@ -41,11 +32,17 @@ const AboutUs = () => {
 				Inside Page Banner
 			============================================== 
 			--> */}
-      <div className="inside-hero-one hero-spacing">
+      <div
+        className="inside-hero-two"
+        style={{
+          backgroundImage: `url(${banner})`,
+        }}
+      >
         <div className="container">
-          <h2 className="page-title font-recoleta">About Us</h2>
+          <h2 className="page-title">Inside Story</h2>
           <p>We’re empowering WordPress to do great things together</p>
         </div>
+     
       </div>
       {/* <!-- /.inside-hero-one --> */}
 
