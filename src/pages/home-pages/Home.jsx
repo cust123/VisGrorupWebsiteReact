@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import img1 from "../../assets/images/media/img_70.png";
 import img2 from "../../assets/images/media/img_71.png";
-import img3 from "../../assets/images/media/img_69.png";
+import img3 from "../../assets/images/media/home502x632.jpg";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 
 import CounterUp from "../../components/consulting-agency/CounterUp";

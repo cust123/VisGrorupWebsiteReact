@@ -15,7 +15,7 @@ import Blog from "../components/service-provider/Blog";
 import FancyBanner from "../components/startup/FancyBanner";
 import Address from "../components/business/Address";
 import Seo from "../components/common/seo/Seo";
-import banner from "../assets/images/media/img_46.jpg";
+import banner from "../assets/images/media/ServicesBanner.jpg";
 import AccordionOne from "./inner-pages/pages/essentials/components/AccordionOne";
 
 const Services = () => {
@@ -31,12 +31,13 @@ const Services = () => {
       <div
         className="inside-hero-two"
         style={{
+            
           backgroundImage: `url(${banner})`,
         }}
       >
         <div className="container">
-          <h2 className="page-title">Inside Story</h2>
-          <p>We’re empowering WordPress to do great things together</p>
+          <h2 className="page-title">Our Services</h2>
+          <p style={{fontWeight:"bold"}}>We’re empowering Services to do great things together</p>
         </div>
      
       </div>

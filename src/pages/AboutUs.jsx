@@ -15,7 +15,7 @@ import Blog from "../components/service-provider/Blog";
 import FancyBanner from "../components/startup/FancyBanner";
 import Address from "../components/business/Address";
 import Seo from "../components/common/seo/Seo";
-import banner from "../assets/images/media/img_46.jpg";
+import banner from "../assets/images/media/aboutUsBanner.jpg";
 import AccordionOne from "./inner-pages/pages/essentials/components/AccordionOne";
 
 const AboutUs = () => {
