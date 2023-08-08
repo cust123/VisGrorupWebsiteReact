@@ -1,37 +1,52 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // logo icon
-import img1 from "../../assets/images/blog/logo_11.png";
-import img2 from "../../assets/images/blog/logo_12.png";
-import img3 from "../../assets/images/blog/logo_13.png";
 
+const blogContent = [
+  {
+    id: 11,
+    tag: "Network Benchmarking11",
+    title: "Aliquip commodo excepteur proident irure..",
+    meta: "New",
+    date: "18 Sep 23",
+    img: "",
+  },
+  {
+    id: 1,
+    tag: "Network Benchmarking",
+    title: "Aliquip commodo excepteur proident irure..",
+    meta: "New",
+    date: "01 Aug 23",
+    img: "",
+  },
+  {
+    id: 2,
+    tag: " Information & Technology",
+    title: "Laboris cupidatae occaecat incididunt consectetur adipisicing.",
+    meta: "New",
+    date: "02 Aug 23",
+    img: "",
+  },
+  {
+    id: 3,
+    tag: "Infotainment",
+    title: "Incididunt laborum aliquip labore dolore.",
+    meta: "Featured",
+    date: "18 July 22",
+    img: "",
+  },
+  
+  {
+    id: 33,
+    tag: "Last Blog",
+    title: "Incididunt laborum aliquip labore dolore.",
+    meta: "Featured",
+    date: "18 July 22",
+    img: "",
+  },
+];
 const Blog = ({ className = "" }) => {
-  const blogContent = [
-    {
-      id: 1,
-      tag: "Plugin",
-      title: "Speaking remotely at WordCamp US.",
-      meta: "Trending",
-      date: "18 July 22",
-      img: img1,
-    },
-    {
-      id: 2,
-      tag: " Soltuion",
-      title: " Our experience at WordCamp in Nagpur",
-      meta: "Fetured",
-      date: "18 July 22",
-      img: img2,
-    },
-    {
-      id: 3,
-      tag: "theme",
-      title: " Motivation defining Moment of self Improvement",
-      meta: "Featured",
-      date: "18 July 22",
-      img: img3,
-    },
-  ];
+ 
 
   return (
     <>
@@ -47,15 +62,7 @@ const Blog = ({ className = "" }) => {
             <div className="post-info">
               {item.meta} - <span className="date">{item.date}</span>
             </div>
-            <div className="post-footer d-flex align-items-center justify-content-between">
-              <img src={item.img} alt="brand" className="logo" />
-              <Link to="/blog-details-v1" className="read-more tran3s">
-                <img
-                  src={require("../../assets/images/icon/icon_16.svg").default}
-                  alt="icon"
-                />
-              </Link>
-            </div>
+           
             {/* <!-- /.post-footer --> */}
           </article>
           {/* <!-- /.blog-meta-one --> */}
@@ -64,5 +71,38 @@ const Blog = ({ className = "" }) => {
     </>
   );
 };
+
+
+export const LatestThreeBlogs = ({ className = "" }) => {
+ 
+   // Sort the blog content array by date in descending order
+   const sortedBlogs = [...blogContent].sort((a, b) => new Date(b.date) - new Date(a.date));
+
+   // Select the latest three blogs
+   const latestThreeBlogs = sortedBlogs.slice(0, 3);
+  return (
+    <>
+      {latestThreeBlogs.map((item) => (
+        <div className="col-lg-4 col-md-6 d-flex" key={item.id}>
+          <article className={`blog-meta-one feature-post ${className}`}>
+            <Link to="/blog-details-v1" className="tag">
+              {item.tag}
+            </Link>
+            <Link to="/blog-details-v1" className="title">
+              {item.title}
+            </Link>
+            <div className="post-info">
+              {item.meta} - <span className="date">{item.date}</span>
+            </div>
+           
+            {/* <!-- /.post-footer --> */}
+          </article>
+          {/* <!-- /.blog-meta-one --> */}
+        </div>
+      ))}
+    </>
+  );
+};
+
 
 export default Blog;

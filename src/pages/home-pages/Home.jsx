@@ -13,7 +13,7 @@ import Header from "../../components/consulting-agency/Header";
 import TeamSlider from "../../components/consulting-agency/TeamSlider";
 import VideoFeatureList from "../../components/consulting-agency/VideoFeatureList";
 import FeedbackSliderFour from "../../components/creative-agency/FeedbackSliderFour";
-import Blog from "../../components/consulting-agency/Blog";
+import {LatestThreeBlogs} from "../../components/consulting-agency/Blog";
 import FooterMenuListTwo from "../../components/common/footer/FooterMenuListTwo";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import FancyBanner from "../../components/service-provider/FancyBanner";
@@ -252,14 +252,14 @@ const Home = () => {
                 <div className="row align-items-center">
                   <div className="col-xl-5 col-sm-6">
                     <div className="title-style-five">
-                      <div className="upper-title">Latest News</div>
-                      <h2 className="title">Our Blog</h2>
+                      <div className="upper-title">Latest Blogs</div>
+                      <h2 className="title">Our Blogs</h2>
                     </div>
                   </div>
                   {/* End .col */}
                   <div className="col-xl-7 col-sm-6 text-sm-end text-start">
                     <Link to="/blog-v2" className="theme-btn-three xs-mt-30">
-                      Check our all news <i className="fas fa-angle-right"></i>
+                      View All Blogs <i className="fas fa-angle-right"></i>
                     </Link>
                   </div>
                   {/* End .col */}
@@ -268,7 +268,7 @@ const Home = () => {
 
                 <div className="mt-100 lg-mt-60">
                   <div className="row feature-post">
-                    <Blog />
+                    <LatestThreeBlogs />
                   </div>
                 </div>
                 {/* End .row */}
