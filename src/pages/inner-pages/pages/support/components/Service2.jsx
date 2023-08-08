@@ -143,7 +143,7 @@ export const AllServices = () => {
     <>
       {serviceContent.map((item) => (
         <div
-          className="col-md-4 col-sm-12 d-flex mt-45"
+          className="col-md-4 col-sm-12 d-flex mt-25"
           data-aos="fade-up"
           data-aos-delay={item.delayAnimation}
           key={item.id}
@@ -154,7 +154,7 @@ export const AllServices = () => {
             </div>
             <h4>{item.title}</h4>
             <p>{item.text}</p>
-            <Link type="button" className="theme-btn-three " to={item.link}>
+            <Link type="button" className="theme-btn-three" to={item.link}>
               Read More..
             </Link>
           </div>
