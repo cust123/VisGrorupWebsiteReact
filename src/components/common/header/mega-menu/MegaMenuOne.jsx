@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import CustomLink from "./CustomLink";
 import logo from "../../../../assets/images/logo/vCamp_01.png";
 import pagesMegaMenuData from "./dropdown-data/pagesMegaMenuData";
 
 const MegaMenuOne = () => {
+  const [toggleType, setToggleType] = useState(() => window.innerWidth < 991 ? "dropdown" : "dropdown-item");
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 991) {
+        setToggleType("dropdown");
+      } else {
+        setToggleType("dropdown-item");
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Initial call
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <ul className="navbar-nav">
       <li className="d-block d-lg-none">
@@ -33,12 +50,15 @@ const MegaMenuOne = () => {
       {/* Sevices */}
       <li className="nav-item dropdown mega-dropdown-md">
         <button
-          className="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown"
+          className="nav-link nav-item dropdown-toggle"
+          data-bs-toggle={toggleType}
           data-bs-auto-close="outside"
           aria-expanded="false"
-        >
+        > 
+        <CustomLink
+        to="/services">
           Services
+          </CustomLink>
         </button>
         <ul className="dropdown-menu">
           <li>
