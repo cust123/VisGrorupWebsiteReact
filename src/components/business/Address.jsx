@@ -10,10 +10,7 @@ const Address = () => {
       title: "Our Address",
       descriptions: (
         <>
-          <p>
-            1012 Pebda Parkway, Mirpur 2 <br />
-            Dhaka, Bangladesh
-          </p>
+          <p>Vis Group, Hansa Str 03, 47058Duisburg, , NRW, Germany</p>
         </>
       ),
       delayAnimatinTime: 0,
@@ -25,9 +22,9 @@ const Address = () => {
       descriptions: (
         <>
           <p>
-            Open a chat or give us call at <br />
-            <a href="tel:310.841.5500" className="call">
-              310.841.5500
+            live chat service <br />
+            <a href="mailto:info@visgroup.eu" className="webaddress">
+              info@visgroup.eu
             </a>
           </p>
         </>
@@ -37,13 +34,13 @@ const Address = () => {
     },
     {
       id: 3,
-      title: "Live Support",
+      title: "Call",
       descriptions: (
         <>
           <p>
-            live chat service <br />
-            <a href="bxtechnologies.net" className="webaddress">
-              www.vcamplivechat.com
+            Give us call at <br />
+            <a href="tel:+49-20334689340" className="call">
+              +49-20334689340
             </a>
           </p>
         </>

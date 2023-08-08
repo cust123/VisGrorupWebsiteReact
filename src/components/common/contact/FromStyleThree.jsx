@@ -11,12 +11,7 @@ const FromStyleThree = ({ className = "" }) => {
           <div className="col-12">
             <div className="input-group-meta form-group mb-25">
               <label>Name*</label>
-              <input
-                type="text"
-                placeholder="Bostami Hasan"
-                name="name"
-                required
-              />
+              <input type="text" placeholder="Your Name" name="name" required />
               <div className="help-block with-errors"></div>
             </div>
           </div>
@@ -27,7 +22,7 @@ const FromStyleThree = ({ className = "" }) => {
               <label>Email*</label>
               <input
                 type="email"
-                placeholder="rshdkabir@gmail.com"
+                placeholder="Enter Your Email"
                 name="email"
                 required
               />
@@ -46,12 +41,15 @@ const FromStyleThree = ({ className = "" }) => {
                 required
               >
                 <option value="">Choose a Service....</option>
-                <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Website Design">Website Design</option>
-                <option value="WordPress">WordPress</option>
-                <option value="Web Analytics">Web Analytics</option>
-                <option value="Web Programming">Web Programming</option>
-                <option value="Infographic Design">Infographic Design</option>
+                <option value="Digital Marketing">Network benchmarking</option>
+                <option value="Website Design">
+                  field performance testing
+                </option>
+                <option value="WordPress">infotainment system</option>
+                <option value="Web Analytics">mobile app testing</option>
+                <option value="Web Programming">full stack development</option>
+                <option value="Infographic Design">software testing</option>
+                <option value="Infographic Design">other</option>
               </select>
               <div className="help-block with-errors"></div>
             </div>
