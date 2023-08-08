@@ -12,7 +12,7 @@ import Seo from "../../../../components/common/seo/Seo";
 const ServiceV2 = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Service V2" />
+      <Seo title="Services" />
       {/* End Seo Related data */}
 
       {/* <!-- 
