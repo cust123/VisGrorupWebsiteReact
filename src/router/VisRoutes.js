@@ -10,6 +10,7 @@ import Home from "../pages/home-pages/Home";
 import NotFound from "../pages/NotFound";
 import AboutUs from "../pages/AboutUs";
 import Services from "../pages/Services";
+import Blogs from "../pages/Blogs";
 
 const VisRoutes = () => {
   return (
@@ -25,6 +26,10 @@ const VisRoutes = () => {
         {/* Services */}
 
         <Route path="/services" element={<Services />} />
+
+        {/* Blogs */}
+
+        <Route path="/blogs" element={<Blogs />} />
 
         {/* Invalid URL */}
         <Route path="*" element={<NotFound />} />
