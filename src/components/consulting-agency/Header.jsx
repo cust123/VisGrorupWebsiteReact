@@ -29,7 +29,7 @@ const Header = () => {
             <Link to="/">
               <img
                 src={require("../../assets/images/logo/visLogo.png")}
-                alt="brand"
+                alt="Vis Logo"
                 style={{ height: "40px" }}
               />
             </Link>
