@@ -1,18 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/media/img_70.png";
-import img2 from "../../assets/images/media/img_71.png";
+import img1 from "../../assets/images/media/networktower.jpg";
 import img3 from "../../assets/images/media/home502x632.jpg";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 
 import CounterUp from "../../components/consulting-agency/CounterUp";
 import FeatureSectionFour from "../../components/creative-agency/FeatureSectionFour";
-import FeatureSlider from "../../components/consulting-agency/FeatureSlider";
 import Header from "../../components/consulting-agency/Header";
 
-import TeamSlider from "../../components/consulting-agency/TeamSlider";
-import VideoFeatureList from "../../components/consulting-agency/VideoFeatureList";
-import FeedbackSliderFour from "../../components/creative-agency/FeedbackSliderFour";
 import { LatestThreeBlogs } from "../../components/consulting-agency/Blog";
 import FooterMenuListTwo from "../../components/common/footer/FooterMenuListTwo";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";

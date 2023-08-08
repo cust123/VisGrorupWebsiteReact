@@ -59,7 +59,7 @@ const serviceContent = [
   },
 
   {
-    id: "telecommunicationID",
+    id: "telecommunicationID2",
     icon: icon1,
     delayAnimation: 0,
     link: "/services/telecommunication",
@@ -72,7 +72,7 @@ const serviceContent = [
     ),
   },
   {
-    id: "infotainmentsystemID",
+    id: "infotainmentsystemID2",
     icon: icon2,
     delayAnimation: 100,
     link: "/services/infotainmentsystems",
@@ -85,7 +85,7 @@ const serviceContent = [
     ),
   },
   {
-    id: "softwaredevelopmentID",
+    id: "softwaredevelopmentID2",
     icon: icon3,
     delayAnimation: 200,
     link: "/services/softwaredevelopment",
@@ -98,7 +98,7 @@ const serviceContent = [
     ),
   },
   {
-    id: "softwaretestingID",
+    id: "softwaretestingID2",
     icon: icon3,
     delayAnimation: 200,
     link: "/services/softwaretesting",
@@ -123,12 +123,17 @@ const Service2 = () => {
           key={item.id}
         >
           <div className="card-style-seven">
-            <div className="icon d-flex align-items-center justify-content-center">
-              <img src={item.icon} alt="icon" />
+            <div className="icon-title-container" style={{ display: "flex" }}>
+              <div
+                className="icon d-flex align-items-center justify-content-center"
+                style={{ marginRight: "10px" }}
+              >
+                <img src={item.icon} alt="icon" />
+              </div>
+              <h4 style={{ marginTop: "12px" }}>{item.title}</h4>
             </div>
-            <h4>{item.title}</h4>
             <p>{item.text}</p>
-            <Link type="button" className="theme-btn-three " to={item.link}>
+            <Link type="button" className="theme-btn-three" to={item.link}>
               Read More..
             </Link>
           </div>
@@ -143,16 +148,21 @@ export const AllServices = () => {
     <>
       {serviceContent.map((item) => (
         <div
-          className="col-md-4 col-sm-12 d-flex mt-25"
+          className="col-md-4 col-sm-12 d-flex mt-45"
           data-aos="fade-up"
           data-aos-delay={item.delayAnimation}
           key={item.id}
         >
           <div className="card-style-seven">
-            <div className="icon d-flex align-items-center justify-content-center">
-              <img src={item.icon} alt="icon" />
+            <div className="icon-title-container" style={{ display: "flex" }}>
+              <div
+                className="icon d-flex align-items-center justify-content-center"
+                style={{ marginRight: "12px" }}
+              >
+                <img src={item.icon} alt="icon" />
+              </div>
+              <h4 style={{ marginTop: "10px" }}>{item.title}</h4>
             </div>
-            <h4>{item.title}</h4>
             <p>{item.text}</p>
             <Link type="button" className="theme-btn-three" to={item.link}>
               Read More..
