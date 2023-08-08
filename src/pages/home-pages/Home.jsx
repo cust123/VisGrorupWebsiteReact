@@ -13,7 +13,7 @@ import Header from "../../components/consulting-agency/Header";
 import TeamSlider from "../../components/consulting-agency/TeamSlider";
 import VideoFeatureList from "../../components/consulting-agency/VideoFeatureList";
 import FeedbackSliderFour from "../../components/creative-agency/FeedbackSliderFour";
-import {LatestThreeBlogs} from "../../components/consulting-agency/Blog";
+import { LatestThreeBlogs } from "../../components/consulting-agency/Blog";
 import FooterMenuListTwo from "../../components/common/footer/FooterMenuListTwo";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 import FancyBanner from "../../components/service-provider/FancyBanner";
@@ -67,7 +67,7 @@ const Home = () => {
                     Our <span>Services</span> .
                   </h4>
                 </div>
-                <p className="meta-info-text text-normal">
+                <p className="meta-info-text ">
                   Vis Group offers Services in Telecommunication, Network
                   Benchmarking, infotainment systems testing, Quality Assurance
                   and Software Development to its global clients.
@@ -108,7 +108,7 @@ const Home = () => {
                 <h4 className="title">We Solve Your Problem.</h4>
               </div>
             </div>
-            <div className="col-lg-5 ms-auto">
+            <div className="col-lg-5 ">
               <p className=" md-pt-30">
                 Welcome to Vis Group, your trusted partner for cutting-edge
                 solutions in network benchmarking, infotainment system testing,
@@ -123,7 +123,7 @@ const Home = () => {
         </div>
         {/* End .container */}
 
-        <div className="main-content">
+        <div className="main-content" style={{ marginTop: "50px" }}>
           <div className="container">
             <div className="row">
               <div
@@ -137,7 +137,7 @@ const Home = () => {
                       We’ve been helping <span>customers</span> globally.
                     </h3>
                   </div>
-                  <p className=" text-normal">
+                  <p className="mt-30">
                     Elevate your digital products and solutions with Vis Group,
                     a leading provider of end-to-end testing and quality
                     assurance services. Operating across Germany, Europe, and
@@ -166,7 +166,7 @@ const Home = () => {
         </div>
         {/* <!-- /.main-content --> */}
       </div>
-      <div className="counter-section-three border-bottom pt-120 pb-60 lg-pt-30 lg-pb-10">
+      <div className="counter-section-three border-bottom pt-30 pb-50 lg-pt-20 lg-pb-10">
         <div className="container">
           <div className="row">
             <CounterUp />
@@ -181,69 +181,7 @@ const Home = () => {
       </div>
       {/* Our Facts and Figers: END */}
 
-      {/* Why Choose Vis-Group: start */}
-      <div className="vcamp-feature-section-five mt-90">
-        <div className="container">
-          <div className="row align-items-center align-items-xl-end">
-            <div className="col-xl-6 col-lg-4 col-md-5 col-sm-8">
-              <div className="title-style-nine text-center text-sm-start xs-pb-20">
-                <h2 className="title">Our Success Story.</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* End .container */}
-        <div className="feature_slider_one mt-70 lg-mt-50 slick-rounded-arrow arrow-top-right exact ripple-btn is_light">
-          <FeatureSlider />
-        </div>
-        {/* End .feature_slider_one */}
-      </div>
-      {/* Why Choose Vis-Group: END */}
-
-      <div className="vcamp-text-block-twelve mt-250 lg-mt-120 pb-20 z-index-auto">
-        <div className="container">
-          <div className="row">
-            <div className="col-xxl-5 col-xl-6 col-lg-7">
-              <VideoFeatureList />
-              {/* <!-- / VideoFeatureList --> */}
-            </div>
-          </div>
-        </div>
-        {/* End .container */}
-
-        <div className="right-img-meta">
-          <img src={img2} alt="media" className="w-100 main-img" />
-        </div>
-        {/* <!-- /.right-img-meta --> */}
-      </div>
-
-      <div className="team-section-four mt-225 lg-mt-100">
-        <div className="container">
-          <div className="row align-items-center align-items-xl-end">
-            <div className="col-xl-6 col-lg-4 col-md-6 col-sm-8">
-              <div className="title-style-nine text-center text-sm-start xs-pb-20">
-                <h2 className="title">Our Talented Players.</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* End .container */}
-
-        <div className="team_slider_two mt-100 lg-mt-60 slick-rounded-arrow arrow-top-right ripple-btn is_light">
-          <TeamSlider />
-        </div>
-        {/* <!-- /.team_slider_two --> */}
-      </div>
-
-      <div className="feedback-section-four bg-white lg-mt-20 sm-mt-50">
-        <div className="container">
-          <div className="feedback_slider_four">
-            <FeedbackSliderFour className="style-two" />
-          </div>
-          {/* <!-- /.feedback_slider_four --> */}
-        </div>
-      </div>
-
+      {/* Our Lastest Three Blogs:start */}
       <div className="blog-section-one">
         <div className="container">
           <div className="border-top pt-120 md-pt-100">
@@ -258,7 +196,7 @@ const Home = () => {
                   </div>
                   {/* End .col */}
                   <div className="col-xl-7 col-sm-6 text-sm-end text-start">
-                    <Link to="/blog-v2" className="theme-btn-three xs-mt-30">
+                    <Link to="/blogs" className="theme-btn-three xs-mt-30">
                       View All Blogs <i className="fas fa-angle-right"></i>
                     </Link>
                   </div>
@@ -278,7 +216,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Our Lastest Three Blogs:start */}
 
+      {/* Call to Action : start */}
       <div className="fancy-banner-one mt-200 lg-mt-120">
         <div className="inner-content position-relative">
           <div className="container">
@@ -288,7 +228,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Call to Action : End */}
 
+      {/* Footer : start */}
       <footer className="vcamp-footer-two pt-150 lg-pt-100">
         <div className="container">
           <div className="row">
@@ -318,6 +260,7 @@ const Home = () => {
         </div>
         {/* End .container */}
       </footer>
+      {/* Footer : End */}
     </div>
     // End .main-page-wrapper
   );

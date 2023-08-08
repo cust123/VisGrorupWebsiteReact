@@ -355,7 +355,7 @@ h6 {
 .title-style-one .title {
   font-family: "Recoleta";
   font-weight: normal;
-  font-size: 52px;
+  font-size: 40px;
   line-height: 1.16em;
   margin-bottom: 0;
 }
@@ -680,7 +680,7 @@ body .theme-btn-two:hover {
 }
 body .theme-btn-three {
   font-family: "gorditamedium";
-  font-size: 18px;
+  font-size: 12px;
   transition: all 0.3s ease-in-out;
 }
 body .theme-btn-three.white-vr {
@@ -2465,7 +2465,7 @@ body .theme-btn-eighteen:hover:before {
 }
 .blog-meta-one.feature-post {
   background: #f6f6f6;
-  padding: 75px 50px 145px;
+  padding: 50px 50px 50px;
   border-bottom-color: #f6f6f6;
 }
 .blog-meta-one.feature-post .post-footer {
@@ -2490,7 +2490,7 @@ body .theme-btn-eighteen:hover:before {
 }
 .blog-meta-one .title {
   font-family: "gorditamedium";
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.3em;
   color: var(--heading);
   display: block;
@@ -3184,12 +3184,15 @@ body .theme-btn-eighteen:hover:before {
   transform: translateY(-8px);
 }
 .card-style-four .title {
+  padding: 30px 0 4px;
   font-size: 24px;
-  padding: 30px 0 20px;
-  margin-bottom: 0;
+    font-family: "Recoleta";
+    font-weight: normal;
+    line-height: 1.16em;
+    margin-bottom: 0;
 }
 .card-style-four p {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.76em;
   color: #4f4f4f;
   margin-bottom: 0;
@@ -5104,11 +5107,16 @@ body .theme-btn-eighteen:hover:before {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Counter Section Three ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .counter-block-three .main-count {
-  font-family: "gorditabold";
-  font-size: 58px;
+  
+  
   color: var(--heading);
   line-height: initial;
   margin-bottom: 0;
+
+  font-family: "Recoleta";
+  font-weight: normal;
+  font-size: 40px;
+  
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Vcamp Feature Section Six ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .vcamp-feature-section-six {
@@ -5826,6 +5834,9 @@ body .theme-btn-eighteen:hover:before {
 .card-style-seven h4 {
   font-size: 24px;
   margin-bottom: 24px;
+  font-family: "Recoleta";
+    font-weight: normal;
+    line-height: 1.16em;
 }
 .card-style-seven p {
   line-height: 34px;

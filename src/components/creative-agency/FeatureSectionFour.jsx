@@ -48,7 +48,7 @@ const FeatureSectionFour = () => {
                   Why <br /> you <span>choose</span> vCamp.
                 </h2>
               </div>
-              <p className="meta-info-text text-lg">
+              <p className="meta-info-text ">
                 Lorem ipsum dolor sit consecte adiel sed do eiusmod tem incid ut
                 labore split.
               </p>
@@ -62,19 +62,32 @@ const FeatureSectionFour = () => {
 
           <div className="col-lg-6 ms-auto">
             <div className="row gx-5">
-              {featureContent.map((feature) => (
+              {featureContent.map((feature, index) => (
                 <div
                   className="col-sm-6"
                   data-aos="fade-up"
                   data-aos-delay={feature.delayAnimation}
                   key={feature.id}
                 >
-                  <div className="card-style-four mb-130 lg-mb-70">
-                    <div className="icon d-flex align-items-end">
-                      <img src={feature.icon} alt="icon" className="tran3s" />
+                  <div className="card-style-four mb-25 lg-mb-70 d-flex align-items-center">
+                    <div
+                      className="number-icon tran3s"
+                      style={{
+                        backgroundColor: "#e16817",
+                        padding: "10px",
+                        color: "whitesmoke",
+                        fontSize: "34px",
+                        fontWeight: "bold",
+                        borderRadius: "5px",
+                        marginRight: "10px",
+                      }}
+                    >
+                      {index + 1}
                     </div>
-                    <h4 className="title">{feature.title}</h4>
-                    <p>{feature.description}</p>
+                    <div>
+                      <h4 className="title">{feature.title}</h4>
+                      <p>{feature.description}</p>
+                    </div>
                   </div>
                   {/* <!-- /.card-style-four --> */}
                 </div>

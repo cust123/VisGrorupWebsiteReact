@@ -62,7 +62,7 @@ const Blog = ({ className = "" }) => {
               {item.title}
             </Link>
             <div className="post-info">
-              {item.meta} - <span className="date">{item.date}</span>
+               <span className="date">{item.date}</span>
             </div>
            
             {/* <!-- /.post-footer --> */}

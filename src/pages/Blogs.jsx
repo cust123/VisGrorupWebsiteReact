@@ -42,7 +42,7 @@ const Blogs = () => {
               <div className="row align-items-center">
                 <div className="col-xl-5 col-md-6 col-sm-7">
                   <div className="title-style-five">
-                    <div className="upper-title">Our Blogs</div>
+                    <div className="upper-title">News & Blogs</div>
                     <h2 className="title">Our Blogs</h2>
                   </div>
                 </div>
