@@ -232,7 +232,7 @@ const Home = () => {
 
       {/* Footer : start */}
       <footer className="vcamp-footer-two pt-150 lg-pt-100">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row">
             <div className="col-xl-3 col-lg-2 mb-40 d-flex align-items-center justify-content-center">
               <div className="logo">
