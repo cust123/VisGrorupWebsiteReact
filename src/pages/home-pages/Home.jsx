@@ -232,22 +232,21 @@ const Home = () => {
 
       {/* Footer : start */}
       <footer className="vcamp-footer-two pt-150 lg-pt-100">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
-            <div className="col-xl-3 col-lg-2 mb-40">
+            <div className="col-xl-3 col-lg-2 mb-40 d-flex align-items-center justify-content-center">
               <div className="logo">
                 <Link to="/">
                   <img
-                    src={
-                      require("../../assets/images/logo/vCamp_03.svg").default
-                    }
-                    alt="brand"
+                    src={require("../../assets/images/logo/visLogo.png")}
+                    alt="Vis Logo"
+                    style={{ maxWidth: "200px", height: "auto" }}
                   />
                 </Link>
+                <p>Reprehenderit sunt aliquip laboris dolore enim.</p>
               </div>
             </div>
             {/* End .col */}
-
             <FooterMenuListTwo />
           </div>
         </div>

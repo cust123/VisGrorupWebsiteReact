@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import FooterNewsletter from "./FooterNewsletter";
 
 const FooterMenuListTwo = ({ className = "" }) => {
   const footerMenuContent = [
     {
       id: 1,
       title: "Links",
-      colClass: "col-lg-2",
+      colClass: "col-lg-3 text-center",
       list: [
         { name: "Home", routeLink: "/" },
         { name: "Pricing", routeLink: "/" },
@@ -19,6 +18,17 @@ const FooterMenuListTwo = ({ className = "" }) => {
     },
     {
       id: 2,
+      title: "Legal",
+      colClass: "col-lg-3",
+      list: [
+        { name: "Terms of Use", routeLink: "/" },
+        { name: "Terms & Conditions", routeLink: "/" },
+        { name: "Privacy Policy", routeLink: "/" },
+        { name: "Cookie Policy", routeLink: "/" },
+      ],
+    },
+    {
+      id: 3,
       title: "Legal",
       colClass: "col-lg-3",
       list: [
@@ -47,11 +57,6 @@ const FooterMenuListTwo = ({ className = "" }) => {
           </ul>
         </div>
       ))}
-
-      <div className="col-lg-4 col-md-6 mb-40">
-        <FooterNewsletter />
-        {/* <!-- /.newsletter --> */}
-      </div>
     </>
   );
 };
