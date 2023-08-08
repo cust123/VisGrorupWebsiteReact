@@ -34,23 +34,23 @@ const Home = () => {
         {/* End .scroll-bar */}
 
         <div className="banner-content h-100 d-md-flex align-items-center justify-content-between">
-      <div className="text-wrapper">
-        <h1 className="hero-heading">Vis Group.</h1>
-        <p className="hero-sub-heading text-normal">
-          We are helping clients to create Durable and high quality Sloutions
-          with our talented expert.
-        </p>
-        <Link to="/contact-v3" className="theme-btn-eleven ripple-btn">
-          Consult with an expert now!
-        </Link>
-      </div>
-      {/* <!-- /.text-wrapper --> */}
+          <div className="text-wrapper">
+            <h1 className="hero-heading">Vis Group.</h1>
+            <p className="hero-sub-heading text-normal">
+              We are helping clients to create Durable and high quality
+              Sloutions with our talented expert.
+            </p>
+            <Link to="/contact-v3" className="theme-btn-eleven ripple-btn">
+              Consult with an expert now!
+            </Link>
+          </div>
+          {/* <!-- /.text-wrapper --> */}
 
-      <div className="img-wrapper position-relative">
-        <img src={img3} alt="media" />
-      </div>
-      {/* End .img-wrapper */}
-    </div>
+          <div className="img-wrapper position-relative">
+            <img src={img3} alt="media" />
+          </div>
+          {/* End .img-wrapper */}
+        </div>
         {/* <!-- /.banner-content --> */}
       </div>
       {/* Banner: End */}
@@ -72,7 +72,7 @@ const Home = () => {
                   Benchmarking, infotainment systems testing, Quality Assurance
                   and Software Development to its global clients.
                 </p>
-                <Link to="/service-v1" className="theme-btn-four ripple-btn">
+                <Link to="/services" className="theme-btn-four ripple-btn">
                   View All Services{" "}
                 </Link>
               </div>
@@ -105,15 +105,18 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="title-style-one">
                 <div className="upper-title">Why choose us</div>
-                <h4 className="title">
-                    We Solve Your Problem.
-                  </h4>
+                <h4 className="title">We Solve Your Problem.</h4>
               </div>
             </div>
             <div className="col-lg-5 ms-auto">
-              <p className="meta-info-text md-pt-30">
-                We are the startup studio with a <span>mission to partner</span>{" "}
-                with the best founders.
+              <p className=" md-pt-30">
+                Welcome to Vis Group, your trusted partner for cutting-edge
+                solutions in network benchmarking, infotainment system testing,
+                software development, and quality assurance. With our global
+                presence spanning Germany, Europe, the Middle East, and the UK,
+                we empower businesses worldwide with unparalleled expertise and
+                innovation. Unleash your potential with Vis Group and unlock
+                limitless possibilities in the digital realm.
               </p>
             </div>
           </div>
@@ -131,14 +134,25 @@ const Home = () => {
                   {/* End Video trigger wrapper */}
                   <div className="title-style-one">
                     <h3 className="title">
-                      We’ve been helping <span>customer</span> globally.
+                      We’ve been helping <span>customers</span> globally.
                     </h3>
                   </div>
                   <p className=" text-normal">
-                    Lorem ipsum dolor sit amet, consecte adiel sed do eiusmod
-                    tempor incidi ut labore split.In ad in labore exercitation consectetur labore veniam veniam ut dolor eiusmod sint.Enim dolor occaecat eiusmod voluptate labore esse incididunt.
+                    Elevate your digital products and solutions with Vis Group,
+                    a leading provider of end-to-end testing and quality
+                    assurance services. Operating across Germany, Europe, and
+                    Asia, we offer comprehensive testing solutions that ensure
+                    the flawless performance of your digital offerings. From
+                    telecommunication system testing to network benchmarking,
+                    infotainment systems testing, and software testing, our
+                    expert team leverages their domain knowledge to deliver
+                    superior results. With Vis Group, you can trust in our
+                    meticulous testing processes and experienced professionals
+                    to provide your end-users with a seamless and exceptional
+                    experience. Let us validate and optimize your digital
+                    solutions for unparalleled success.
                   </p>
-                  <Link to="/about-v1" className="theme-btn-two">
+                  <Link to="/about-us" className="theme-btn-two">
                     More about us
                   </Link>
                 </div>
