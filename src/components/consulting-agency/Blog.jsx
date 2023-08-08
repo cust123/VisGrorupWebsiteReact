@@ -45,13 +45,15 @@ const blogContent = [
     img: "",
   },
 ];
+
+
 const Blog = ({ className = "" }) => {
  
 
   return (
     <>
       {blogContent.map((item) => (
-        <div className="col-lg-4 col-md-6 d-flex" key={item.id}>
+          <div className="col-lg-4 col-md-6 mb-20 d-flex" key={item.id}>
           <article className={`blog-meta-one feature-post ${className}`}>
             <Link to="/blog-details-v1" className="tag">
               {item.tag}
