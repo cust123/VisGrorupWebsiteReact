@@ -28,7 +28,7 @@ const Header = () => {
           <div className="logo">
             <Link to="/">
               <img
-                src={require("../../assets/images/logo/vCamp_09.svg").default}
+                src={require("../../assets/images/logo/visLogo.png")}
                 alt="brand"
                 style={{ height: "40px" }}
               />
