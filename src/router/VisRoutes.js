@@ -1,10 +1,15 @@
+// Libraries
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
+// components
 import ScrollTopBehaviour from "../components/elements/ScrollTopBehaviour";
+
+// Pages
 import Home from "../pages/home-pages/Home";
 import NotFound from "../pages/NotFound";
 import AboutUs from "../pages/AboutUs";
+import Services from "../pages/Services";
 
 const VisRoutes = () => {
   return (
@@ -15,16 +20,13 @@ const VisRoutes = () => {
         <Route path="/" element={<Home />} />
 
         {/* about us page  */}
-
         <Route path="/about-us" element={<AboutUs />} />
 
-        {/* pages dropdown Essentials pages */}
-        {/* Essentials */}
+        {/* Services */}
 
-        {/* Support */}
+        <Route path="/services" element={<Services />} />
 
-        {/* Others */}
-
+        {/* Invalid URL */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
