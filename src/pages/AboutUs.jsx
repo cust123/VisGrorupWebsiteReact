@@ -32,8 +32,8 @@ const AboutUs = () => {
         }}
       >
         <div className="container">
-          <h2 className="page-title">Inside Story</h2>
-          <p>We’re empowering WordPress to do great things together</p>
+          <h2 className="page-title">About Us</h2>
+          <p>Welcome to the Age of Digital Transformation</p>
         </div>
       </div>
       {/* <!-- /.inside-hero-one --> */}
@@ -43,13 +43,6 @@ const AboutUs = () => {
           <TextBlockOne />
         </div>
         {/* End TextBlockOne */}
-        <div className="position-relative">
-          <img
-            src={require("../assets/images/shape/shape_05.svg").default}
-            alt="shape"
-            className="shapes shape-two"
-          />
-        </div>
       </div>
 
       <div className="vcamp-text-block-five mt-170 lg-mt-120">
@@ -59,9 +52,21 @@ const AboutUs = () => {
               <div className="text-wrapper">
                 <div className="title-style-five">
                   <div className="upper-title">ABOUT US</div>
-                  <h2 className="title">
-                    We’ve been helping cutomer globally.
-                  </h2>
+                  <p className="title">
+                    We’ve been helping customer globally.Elevate your digital
+                    products and solutions with Vis Group, a leading provider of
+                    end-to-end testing and quality assurance services. Operating
+                    across Germany, Europe, and Asia, we offer comprehensive
+                    testing solutions that ensure the flawless performance of
+                    your digital offerings. From telecommunication system
+                    testing to network benchmarking, infotainment systems
+                    testing, and software testing, our expert team leverages
+                    their domain knowledge to deliver superior results. With Vis
+                    Group, you can trust in our meticulous testing processes and
+                    experienced professionals to provide your end-users with a
+                    seamless and exceptional experience. Let us validate and
+                    optimize your digital solutions for unparalleled success.
+                  </p>
                 </div>
               </div>
             </div>
