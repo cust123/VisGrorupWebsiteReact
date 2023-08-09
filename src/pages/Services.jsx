@@ -3,14 +3,12 @@ import Sidebar from "../components/common/header/sidebar/Sidebar";
 import Header from "../components/consulting-agency/Header";
 import CopyrightFooter from "../components/common/footer/CopyrightFooter";
 import FooterMenuListTwo from "../components/common/footer/FooterMenuListTwo";
-import CounterUp from "../components/business/CounterUp";
 import { AllServices } from "./inner-pages/pages/support/components/Service2";
-import Partners from "./inner-pages/pages/essentials/components/Partners";
 import { Link } from "react-router-dom";
-import FancyBanner from "../components/startup/FancyBanner";
-import Address from "../components/business/Address";
 import Seo from "../components/common/seo/Seo";
 import banner from "../assets/images/media/ServicesBanner.jpg";
+
+import FancyBanner from "../components/service-provider/FancyBanner";
 
 const Services = () => {
   return (
@@ -21,6 +19,7 @@ const Services = () => {
 
       <Header />
 
+      {/* Banner: Start */}
       <div
         className="inside-hero-two"
         style={{
@@ -34,8 +33,9 @@ const Services = () => {
           </p>
         </div>
       </div>
-      {/* <!-- /.inside-hero-one --> */}
+      {/* Banner: End */}
 
+      {/* All Services:Start */}
       <div className="vcamp-feature-section-seven style-two mt-10 lg-mt-120">
         <div className="container">
           <div className="row">
@@ -62,110 +62,19 @@ const Services = () => {
           {/* <!-- /.box-layout --> */}
         </div>
       </div>
+      {/* All Services:Start */}
 
-      {/* <!-- /.vcamp-text-block-one --> */}
-
-      {/* <!--
-			=====================================================
-				Counter Section One
-			=====================================================
-			--> */}
-      <div className="counter-section-one mt-170 md-mt-120">
-        <div className="inner-container">
-          <div className="row">
-            <CounterUp />
-          </div>
-        </div>
-      </div>
-      {/* End .counter-section-one */}
-
-      {/* <!-- 
-			=============================================
-				Vcamp Feature Section Five
-			============================================== 
-			--> */}
-
-      {/* <!-- /.vcamp-feature-section-five --> */}
-
-      {/* <!--
-			=====================================================
-				Partner Section Three
-			=====================================================
-			--> */}
-      <div className="partner-section-three mt-200 lg-mt-120">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-xl-5 col-lg-4 col-md-8">
-              <div className="title-style-one">
-                <h2 className="title">
-                  Our best <span>partners</span> for the long run.
-                </h2>
-              </div>
+      {/* Call to action: start */}
+      <div className="fancy-banner-one mt-20 lg-mt-120">
+        <div className="inner-content position-relative">
+          <div className="container">
+            <div className="row align-items-center">
+              <FancyBanner />
             </div>
-            {/* End .col */}
-
-            <div className="col-xl-6 col-lg-7 ms-auto">
-              <p className="info-text">
-                Over <span>32K+</span> software businesses growing with vCamp.
-              </p>
-              <div className="row">
-                <Partners />
-              </div>
-            </div>
-            {/* End .col */}
           </div>
         </div>
       </div>
-      {/* <!-- /.partner-section-three --> */}
-
-      {/* <!--
-			=====================================================
-				Feedback Slider Two
-			=====================================================
-			--> */}
-
-      {/* <!-- /.feedback-section-two --> */}
-
-      {/* <!--
-			=====================================================
-				Blog Section One
-			=====================================================
-			--> */}
-
-      {/* <!-- /.blog-section-one --> */}
-
-      {/* <!--
-			=====================================================
-				Vcamp Fancy Banner Three
-			=====================================================
-			--> */}
-      <div className="box-layout mt-200 lg-mt-120">
-        <div className="fancy-banner-three">
-          <div className="inner-content position-relative">
-            <div className="container">
-              <div className="row align-items-center">
-                <FancyBanner />
-              </div>
-              {/* End .row */}
-            </div>
-            {/* End .container */}
-          </div>
-        </div>
-      </div>
-      {/* <!-- /.fancy-banner-three --> */}
-
-      {/* <!--
-			=====================================================
-			Contact Section One
-			=====================================================
-			--> */}
-      <div className="contact-section-one mt-120 mb-80 lg-mt-80 lg-mb-40">
-        <div className="container">
-          <div className="row">
-            <Address />
-          </div>
-        </div>
-      </div>
+      {/* Call to action: End */}
 
       {/* Footer : start */}
       <footer className="vcamp-footer-two pt-150 lg-pt-100">
