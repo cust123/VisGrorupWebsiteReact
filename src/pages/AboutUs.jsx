@@ -3,7 +3,7 @@ import Sidebar from "../components/common/header/sidebar/Sidebar";
 import Header from "../components/consulting-agency/Header";
 import CopyrightFooter from "../components/common/footer/CopyrightFooter";
 import TextBlockOne from "./inner-pages/pages/essentials/components/TextBlockOne";
-import CounterUp from "../components/business/CounterUp";
+import CounterUp from "../components/consulting-agency/CounterUp";
 import Partners from "./inner-pages/pages/essentials/components/Partners";
 import { Link } from "react-router-dom";
 import FancyBanner from "../components/service-provider/FancyBanner";
@@ -93,8 +93,8 @@ const AboutUs = () => {
       {/* Who we are : End */}
 
       {/* Counter: start */}
-      <div className="counter-section-one mt-170 md-mt-120">
-        <div className="inner-container">
+      <div className="counter-section-three border-bottom pt-30 pb-50 lg-pt-20 lg-pb-10">
+        <div className="container">
           <div className="row">
             <CounterUp />
           </div>

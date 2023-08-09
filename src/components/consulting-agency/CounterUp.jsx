@@ -6,25 +6,34 @@ const counterUpContent = [
   {
     id: 1,
     startCount: "0",
-    endCount: "3",
-    endPointText: "k",
-    meta: "Job done successfully",
+    endCount: "14",
+    endPointText: "+",
+    meta: "Business Years",
     animationDelay: "0",
   },
   {
     id: 2,
     startCount: "0",
-    endCount: "20",
-    endPointText: "million",
-    meta: "3,280 avg rating",
+    endCount: "230",
+    endPointText: "+",
+    meta: "Satisfied Clients",
     animationDelay: "100",
   },
   {
     id: 3,
     startCount: "0",
-    endCount: "3000",
+    endCount: "600",
     endPointText: "+",
-    meta: "Using vCamp",
+    meta: "Projects Delivery",
+    animationDelay: "200",
+  },
+
+  {
+    id: 4,
+    startCount: "0",
+    endCount: "200",
+    endPointText: "+",
+    meta: "Team Members",
     animationDelay: "200",
   },
 ];
@@ -36,7 +45,7 @@ const CounterUp = () => {
     <>
       {counterUpContent.map((val) => (
         <div
-          className="col-md-4"
+          className="col-md-3"
           data-aos="fade-up"
           data-aos-delay={val.animationDelay}
           key={val.id}
