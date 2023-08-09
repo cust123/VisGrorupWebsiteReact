@@ -13,6 +13,7 @@ import Services from "../pages/Services";
 import Projects from "../pages/Projects";
 import Blogs from "../pages/Blogs";
 import ContactUs from "../pages/ContactUs";
+import Imprint from "../pages/Imprint";
 
 const VisRoutes = () => {
   return (
@@ -40,6 +41,10 @@ const VisRoutes = () => {
         {/* Contact */}
 
         <Route path="/contact-us" element={<ContactUs />} />
+
+        {/* Imprint */}
+
+        <Route path="/imprint" element={<Imprint />} />
 
         {/* Invalid URL */}
         <Route path="*" element={<NotFound />} />
