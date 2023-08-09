@@ -1,19 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/images/media/networktower.jpg";
-import img3 from "../../assets/images/media/home502x632.jpg";
-import Sidebar from "../../components/common/header/sidebar/Sidebar";
+import img1 from "../assets/images/media/networktower.jpg";
+import img3 from "../assets/images/media/home502x632.jpg";
+import Sidebar from "../components/common/header/sidebar/Sidebar";
 
-import CounterUp from "../../components/consulting-agency/CounterUp";
-import FeatureSectionFour from "../../components/creative-agency/FeatureSectionFour";
-import Header from "../../components/consulting-agency/Header";
+import CounterUp from "../components/consulting-agency/CounterUp";
+import FeatureSectionFour from "../components/creative-agency/FeatureSectionFour";
+import Header from "../components/consulting-agency/Header";
 
-import { LatestThreeBlogs } from "../../components/consulting-agency/Blog";
-import FooterMenuListTwo from "../../components/common/footer/FooterMenuListTwo";
-import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
-import FancyBanner from "../../components/service-provider/FancyBanner";
-import Seo from "../../components/common/seo/Seo";
-import Service2 from "../inner-pages/pages/support/components/Service2";
+import { LatestThreeBlogs } from "../components/consulting-agency/Blog";
+import FooterMenuListTwo from "../components/common/footer/FooterMenuListTwo";
+import CopyrightFooter from "../components/common/footer/CopyrightFooter";
+import FancyBanner from "../components/service-provider/FancyBanner";
+import Seo from "../components/common/seo/Seo";
+import Service2 from "./inner-pages/pages/support/components/Service2";
 
 const Home = () => {
   return (
@@ -239,7 +239,7 @@ const Home = () => {
               <div className="logo">
                 <Link to="/">
                   <img
-                    src={require("../../assets/images/logo/visLogo.png")}
+                    src={require("../assets/images/logo/visLogo.png")}
                     alt="Vis Logo"
                     style={{ maxWidth: "200px", height: "auto" }}
                   />
