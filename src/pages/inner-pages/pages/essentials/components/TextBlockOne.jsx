@@ -21,23 +21,10 @@ const TextBlockOne = () => {
           data-aos="fade-left"
         >
           <div className="text-wrapper pt-0">
-            <div
-              className="fancybox video-icon d-flex align-items-center justify-content-center"
-              onClick={() => setOpen(true)}
-              role="button"
-            >
-              <img
-                src={
-                  require("../../../../../assets/images/icon/icon_41.svg")
-                    .default
-                }
-                alt="icon"
-              />
-            </div>
             {/* End Video trigger wrapper */}
             <div className="title-style-two">
               <h3 className="title">
-                We’ve been helping <span>customer</span> globally.
+                Your Product and Network <span> Quality </span> is our Passion.
               </h3>
             </div>
             <h6>Who we are?</h6>
@@ -53,23 +40,7 @@ const TextBlockOne = () => {
         <div className="col-xxl-6 col-lg-6" data-aos="fade-up">
           <div className="img-container position-relative">
             <img src={heroAvatar} alt="hero avatar" className="ceo-avatar" />
-            <div className="quote-wrapper">
-              <img
-                src={
-                  require("../../../../../assets/images/icon/icon_10.svg")
-                    .default
-                }
-                alt="icon"
-                className="icon"
-              />
-              <blockquote>
-                Our partnership with vCamp Their support helped us to solve
-                everything.
-              </blockquote>
-              <h6 className="name">
-                Jannatul Era. <span>CEO vCamp</span>
-              </h6>
-            </div>
+
             {/* <!-- /.quote-wrapper --> */}
           </div>
         </div>
