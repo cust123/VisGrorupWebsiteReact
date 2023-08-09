@@ -10,28 +10,28 @@ const FeatureSectionFour = () => {
     {
       id: 1,
       icon: icon1,
-      title: "File sharing",
+      title: "Dedicated Teams",
       description: `Elit esse cillum dolore eu fugiat nulla pariatur`,
       delayAnimation: 0,
     },
     {
       id: 2,
       icon: icon2,
-      title: "Team Managment",
+      title: "Speedy Resourse Mobilization",
       description: `Elit esse cillum dolore eu fugiat nulla pariatur`,
       delayAnimation: 100,
     },
     {
       id: 3,
       icon: icon3,
-      title: "Cloud storage",
+      title: "Presence In Multiple Locations",
       description: `Elit esse cillum dolore eu fugiat nulla pariatur`,
       delayAnimation: 0,
     },
     {
       id: 4,
       icon: icon4,
-      title: "Voice & video call",
+      title: "Proven Track Record",
       description: `Elit esse cillum dolore eu fugiat nulla pariatur`,
       delayAnimation: 100,
     },
@@ -45,14 +45,14 @@ const FeatureSectionFour = () => {
             <div className="text-wrapper mb-130 lg-mb-70">
               <div className="title-style-one">
                 <h2 className="title">
-                  Why <br /> you <span>choose</span> vCamp.
+                  Why <br /> you <span>choose</span> Vis-Group.
                 </h2>
               </div>
               <p className="meta-info-text ">
                 Lorem ipsum dolor sit consecte adiel sed do eiusmod tem incid ut
                 labore split.
               </p>
-              <Link to="about-v2" className="theme-btn-three">
+              <Link to="about-us" className="theme-btn-three">
                 Learn more <i className="fas fa-angle-right"></i>
               </Link>
             </div>
