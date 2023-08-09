@@ -33,7 +33,7 @@ const Home = () => {
             <h1 className="hero-heading">Vis Group.</h1>
             <p className="hero-sub-heading text-normal">
               We are helping clients to create Durable and high quality
-              Sloutions with our talented expert.
+              Sloutions with our talented resources and experts.
             </p>
             <Link to="/contact-v3" className="theme-btn-eleven ripple-btn">
               Consult with an expert now!
@@ -239,7 +239,9 @@ const Home = () => {
                   />
                 </Link>
                 <p style={{ fontFamily: "Recoleta" }}>
-                  Reprehenderit sunt aliquip laboris dolore enim.
+                  We offer digital services in network benchmarking, software
+                  development, and mobile network testing. Contact us for
+                  details.
                 </p>
               </div>
             </div>
