@@ -7,11 +7,12 @@ import { Link } from "react-router-dom";
 import Address from "../components/business/Address";
 import Seo from "../components/common/seo/Seo";
 import FromStyleThree from "../components/common/contact/FromStyleThree";
+import VisLocations from "../components/VisLocations/VisLocation";
 
 const ContactUs = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Abut Us" />
+      <Seo title="Contact Us" />
 
       <Sidebar />
 
@@ -67,17 +68,16 @@ const ContactUs = () => {
             </div>
             {/* End .col */}
 
-            <div className="col-xl-6 order-xl-first d-flex">
-              <div className="map-area-two h-100 w-100">
-                <div className="mapouter">
-                  <div className="gmap_canvas">
-                    <iframe
-                      title="map"
-                      className="gmap_iframe"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359537.0372323226!2d-75.8002569!3d45.25015655000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x8a6a51e131dd15ed!2sOttawa%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sbd!4v1660284753489!5m2!1sen!2sbd"
-                    ></iframe>
-                  </div>
-                </div>
+            <div className="col-xl-6 order-xl-first">
+              <div
+                className="map-area-two h-100 w-100"
+                style={{
+                  backgroundColor: "lightgray",
+                  paddingTop: "50px",
+                  paddingLeft: "20px",
+                }}
+              >
+                <VisLocations />
               </div>
             </div>
             {/* End .col */}
