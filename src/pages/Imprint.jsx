@@ -193,8 +193,9 @@ const Imprint = () => {
                   position: "relative",
                   display: "inline-block",
                   fontFamily: "Recoleta",
-                  fontWeight: "700",
+
                   marginBottom: "0.2rem",
+                  fontSize: "20px",
                 }}
               >
                 Haftungshinweis
@@ -214,8 +215,9 @@ const Imprint = () => {
                   position: "relative",
                   display: "inline-block",
                   fontFamily: "Recoleta",
-                  fontWeight: "700",
+
                   marginBottom: "0.2rem",
+                  fontSize: "20px",
                 }}
               >
                 Wir bieten Ihnen
