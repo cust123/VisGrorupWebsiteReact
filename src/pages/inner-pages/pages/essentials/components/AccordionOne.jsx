@@ -7,10 +7,10 @@ const AccordionOne = () => {
       dataBsTarget: "#collapseOne",
       dataBsTargetId: "collapseOne",
       arialExpand: "true",
-      title: "Who we are?",
-      descriptions: `Our founders Dustin Moskovitz and Justin quis Rosenstein met while leading Engineering team at Facebook.`,
-      itemShow: "show",
-      collapseItem: "",
+      title: "Our Vision",
+      descriptions: `Fugiat mollit qui tempor cillum do. Veniam ea reprehenderit aute labore aliqua occaecat laborum commodo elit eu. Nisi sint culpa quis tempor nulla nisi labore est amet Lorem dolore. Occaecat dolore proident excepteur eu dolore laborum commodo ullamco. Tempor voluptate consequat adipisicing fugiat. Id esse duis amet esse dolore culpa aute proident ut officia occaecat.`,
+      itemShow: "",
+      collapseItem: "collapsed",
     },
     {
       id: "2",
@@ -18,7 +18,7 @@ const AccordionOne = () => {
       dataBsTargetId: "collapseTwo",
       arialExpand: "false",
       title: "What’s our goal?",
-      descriptions: `Our founders Dustin Moskovitz and Justin quis Rosenstein met while leading Engineering team at Facebook.`,
+      descriptions: `Fugiat mollit qui tempor cillum do. Veniam ea reprehenderit aute labore aliqua occaecat laborum commodo elit eu. Nisi sint culpa quis tempor nulla nisi labore est amet Lorem dolore. Occaecat dolore proident excepteur eu dolore laborum commodo ullamco. Tempor voluptate consequat adipisicing fugiat. Id esse duis amet esse dolore culpa aute proident ut officia occaecat.`,
       itemShow: "",
       collapseItem: "collapsed",
     },
@@ -28,7 +28,7 @@ const AccordionOne = () => {
       dataBsTargetId: "collapseThree",
       arialExpand: "false",
       title: "Our vision",
-      descriptions: `Our founders Dustin Moskovitz and Justin quis Rosenstein met while leading Engineering team at Facebook.`,
+      descriptions: `Fugiat mollit qui tempor cillum do. Veniam ea reprehenderit aute labore aliqua occaecat laborum commodo elit eu. Nisi sint culpa quis tempor nulla nisi labore est amet Lorem dolore. Occaecat dolore proident excepteur eu dolore laborum commodo ullamco. Tempor voluptate consequat adipisicing fugiat. Id esse duis amet esse dolore culpa aute proident ut officia occaecat.`,
       itemShow: "",
       collapseItem: "collapsed",
     },
@@ -53,7 +53,10 @@ const AccordionOne = () => {
             className={`accordion-collapse collapse ${item.itemShow}`}
             data-bs-parent="#accordionOne"
           >
-            <div className="accordion-body">
+            <div
+              className="accordion-body"
+              style={{ fontSize: "16px", textAlign: "justify" }}
+            >
               <p>{item.descriptions}</p>
             </div>
           </div>

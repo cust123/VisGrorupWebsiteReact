@@ -4,13 +4,9 @@ import Header from "../components/consulting-agency/Header";
 import CopyrightFooter from "../components/common/footer/CopyrightFooter";
 import TextBlockOne from "./inner-pages/pages/essentials/components/TextBlockOne";
 import CounterUp from "../components/business/CounterUp";
-import FeatureSlider from "../components/consulting-agency/FeatureSlider";
-import FeedbackSliderTwo from "../components/business/FeedbackSliderTwo";
 import Partners from "./inner-pages/pages/essentials/components/Partners";
 import { Link } from "react-router-dom";
-import Blog from "../components/service-provider/Blog";
-import FancyBanner from "../components/startup/FancyBanner";
-import Address from "../components/business/Address";
+import FancyBanner from "../components/service-provider/FancyBanner";
 import Seo from "../components/common/seo/Seo";
 import banner from "../assets/images/media/aboutUsBanner.jpg";
 import AccordionOne from "./inner-pages/pages/essentials/components/AccordionOne";
@@ -25,6 +21,7 @@ const AboutUs = () => {
 
       <Header />
 
+      {/* Banner:start */}
       <div
         className="inside-hero-two"
         style={{
@@ -36,23 +33,23 @@ const AboutUs = () => {
           <p>Welcome to the Age of Digital Transformation</p>
         </div>
       </div>
-      {/* <!-- /.inside-hero-one --> */}
+      {/* Banner : End */}
 
-      <div className="vcamp-text-block-one mt-200 lg-mt-120 position-static">
+      {/* About Us: start */}
+      <div className="vcamp-text-block-one mt-50 lg-mt-120">
         <div className="container">
-          <TextBlockOne />
-        </div>
-        {/* End TextBlockOne */}
-      </div>
-
-      <div className="vcamp-text-block-five mt-170 lg-mt-120">
-        <div className="container">
-          <div className="row align-items-center">
+          <div className="row align-items-center" style={{ marginTop: "20px" }}>
             <div className="col-xxl-6 col-xl-7 col-lg-5">
-              <div className="text-wrapper">
-                <div className="title-style-five">
+              <div className="text-wrapper" style={{ paddingTop: "10px" }}>
+                <div className="title-style-one">
                   <div className="upper-title">About Us</div>
-                  <p className="title">
+                  <p
+                    style={{
+                      fontFamily: "Recoleta",
+                      fontSize: "16px",
+                      textAlign: "justify",
+                    }}
+                  >
                     We’ve been helping customer globally.Elevate your digital
                     products and solutions with Vis Group, a leading provider of
                     end-to-end testing and quality assurance services. Operating
@@ -84,14 +81,18 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      {/* About Us : ENd */}
 
-      {/* <!-- /.vcamp-text-block-one --> */}
+      {/* Who we are : start */}
+      <div className="vcamp-text-block-one mt-70 lg-mt-40 position-static">
+        <div className="container">
+          <TextBlockOne />
+        </div>
+        {/* End TextBlockOne */}
+      </div>
+      {/* Who we are : End */}
 
-      {/* <!--
-			=====================================================
-				Counter Section One
-			=====================================================
-			--> */}
+      {/* Counter: start */}
       <div className="counter-section-one mt-170 md-mt-120">
         <div className="inner-container">
           <div className="row">
@@ -99,28 +100,10 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      {/* End .counter-section-one */}
+      {/* Counter: End */}
 
-      {/* <!-- 
-			=============================================
-				Vcamp Feature Section Five
-			============================================== 
-			--> */}
-      <div className="vcamp-feature-section-five mt-100 lg-mt-80">
-        {/* End .container */}
-        <div className="arrow-none">
-          <FeatureSlider />
-        </div>
-        {/* End .feature_slider_one */}
-      </div>
-      {/* <!-- /.vcamp-feature-section-five --> */}
-
-      {/* <!--
-			=====================================================
-				Partner Section Three
-			=====================================================
-			--> */}
-      <div className="partner-section-three mt-200 lg-mt-120">
+      {/* Our Partners: start */}
+      <div className="partner-section-three mt-50 lg-mt-120">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-5 col-lg-4 col-md-8">
@@ -133,9 +116,6 @@ const AboutUs = () => {
             {/* End .col */}
 
             <div className="col-xl-6 col-lg-7 ms-auto">
-              <p className="info-text">
-                Over <span>32K+</span> software businesses growing with vCamp.
-              </p>
               <div className="row">
                 <Partners />
               </div>
@@ -144,109 +124,19 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      {/* <!-- /.partner-section-three --> */}
+      {/* Our Partners: End */}
 
-      {/* <!--
-			=====================================================
-				Feedback Slider Two
-			=====================================================
-			--> */}
-      <div className="feedback-section-two box-layout mt-110 lg-mt-50">
-        <div className="bg-wrapper">
+      {/* Call to action: start */}
+      <div className="fancy-banner-one mt-200 lg-mt-120">
+        <div className="inner-content position-relative">
           <div className="container">
-            <div className="row align-items-center justify-content-center">
-              <div className="col-xl-7 col-lg-6 col-md-8 m-auto">
-                <div className="title-style-one text-center ">
-                  <h2 className="title">
-                    What’s our <span>client</span> say about us.
-                  </h2>
-                </div>
-              </div>
+            <div className="row align-items-center">
+              <FancyBanner />
             </div>
           </div>
-          {/* <!-- /.container --> */}
-
-          <div className="feedback_slider_seven arrow-none">
-            <FeedbackSliderTwo />
-          </div>
-          {/* <!-- /.feedback_slider_two --> */}
-        </div>
-        {/* <!-- /.bg-wrapper --> */}
-      </div>
-      {/* <!-- /.feedback-section-two --> */}
-
-      {/* <!--
-			=====================================================
-				Blog Section One
-			=====================================================
-			--> */}
-      <div className="blog-section-one mt-180 lg-mt-120">
-        <div className="container">
-          <div className="row">
-            <div className="col-xxl-11 m-auto">
-              <div className="row align-items-center">
-                <div className="col-xl-5 col-md-6 col-sm-7">
-                  <div className="title-style-five">
-                    <div className="upper-title">Latest News</div>
-                    <h2 className="title">Our Blog</h2>
-                  </div>
-                </div>
-                {/* End .col */}
-                <div className="col-xl-7 col-md-6 col-sm-5 text-sm-end text-start">
-                  <Link to="/blog-v2" className="theme-btn-three xs-mt-30">
-                    Check our all news <i className="fas fa-angle-right"></i>
-                  </Link>
-                </div>
-                {/* End .col */}
-              </div>
-              {/* End .row */}
-
-              <div className="mt-100 lg-mt-60">
-                <div className="row">
-                  <Blog />
-                </div>
-              </div>
-              {/* End .row */}
-            </div>
-            {/* End .col */}
-          </div>
         </div>
       </div>
-      {/* <!-- /.blog-section-one --> */}
-
-      {/* <!--
-			=====================================================
-				Vcamp Fancy Banner Three
-			=====================================================
-			--> */}
-      <div className="box-layout mt-200 lg-mt-120">
-        <div className="fancy-banner-three">
-          <div className="inner-content position-relative">
-            <div className="container">
-              <div className="row align-items-center">
-                <FancyBanner />
-              </div>
-              {/* End .row */}
-            </div>
-            {/* End .container */}
-          </div>
-        </div>
-      </div>
-      {/* <!-- /.fancy-banner-three --> */}
-
-      {/* <!--
-			=====================================================
-			Contact Section One
-			=====================================================
-			--> */}
-      <div className="contact-section-one mt-120 mb-80 lg-mt-80 lg-mb-40">
-        <div className="container">
-          <div className="row">
-            <Address />
-          </div>
-        </div>
-      </div>
-      {/* <!-- /.contact-section-one --> */}
+      {/* Call to action: End */}
 
       {/* Footer : start */}
       <footer className="vcamp-footer-two pt-150 lg-pt-100">

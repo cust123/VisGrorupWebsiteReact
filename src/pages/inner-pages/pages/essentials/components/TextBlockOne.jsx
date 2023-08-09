@@ -22,16 +22,17 @@ const TextBlockOne = () => {
         >
           <div className="text-wrapper pt-0">
             {/* End Video trigger wrapper */}
-            <div className="title-style-two">
-              <h3 className="title">
+            <div className="title-style-one">
+              <h3 className="title" style={{ marginTop: "1.5rem" }}>
                 Your Product and Network <span> Quality </span> is our Passion.
               </h3>
             </div>
-            <h6>Who we are?</h6>
-            <p className="meta-info-text-two">
-              Our founders Dustin Moskovitz and Justin Rosenstein met while
-              leading Engineering teams at Facebook. As operations scaled, they
-              grew frustrated by how difficult.
+            <h4 style={{ marginTop: "1rem" }}>Who we are?</h4>
+            <p style={{ fontFamily: "Recoleta", textAlign: "justify" }}>
+              Cillum adipisicing enim Lorem mollit minim laborum minim
+              reprehenderit. Nisi in nisi veniam irure eiusmod laboris ad ipsum
+              anim dolor reprehenderit. Adipisicing mollit laboris ipsum dolor
+              minim laboris excepteur.
             </p>
           </div>
         </div>
