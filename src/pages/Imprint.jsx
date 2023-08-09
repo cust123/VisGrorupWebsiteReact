@@ -4,34 +4,241 @@ import Header from "../components/consulting-agency/Header";
 import CopyrightFooter from "../components/common/footer/CopyrightFooter";
 import { Link } from "react-router-dom";
 import Seo from "../components/common/seo/Seo";
-import Faq from "./inner-pages/pages/others/components/Faq";
 import FooterMenuListTwo from "../components/common/footer/FooterMenuListTwo";
 
 const Imprint = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Projects" />
+      <Seo title="Imprint" />
       <Sidebar />
       <Header />
 
-      {/* <!-- /.inside-hero-one --> */}
-
-      <div className="inside-hero-one hero-spacing">
-        <div className="container">
-          <h2 className="page-title font-recoleta">Imprint</h2>
-          <p>Find the relevent information about the Vis Group here!</p>
-        </div>
-      </div>
-      {/* <!-- /.inside-hero-one --> */}
-      {/* <!-- 
-        =============================================
-        FAQ Section One
-        ============================================== 
-        --> */}
-      <div className="faq-section-one mt-120 mb-150 lg-mt-100 lg-mb-120">
+      {/* Banner:start */}
+      <div className="inside-hero-three">
         <div className="container">
           <div className="row">
-            <Faq />
+            <div
+              className="col-lg-4 col-md-5 "
+              style={{ marginBottom: "0.9rem" }}
+            >
+              <h2 className="page-title font-recoleta">
+                <span>Imprint</span>
+              </h2>
+            </div>
+            <div className="col-lg-3 col-md-3 "></div>
+            <div
+              className="col-lg-3 col-md-4 "
+              style={{ alignItems: "flex-end" }}
+            >
+              <img
+                src={require("../assets/images/logo/visLogo.png")}
+                alt="Vis Logo"
+                style={{ maxWidth: "250px", height: "auto" }}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Banner:ENd */}
+
+      <div className=" mt-20 mb-100 lg-mt-10 lg-mb-80">
+        <div className="container">
+          <hr style={{ marginBottom: "2rem" }} />
+          <div className="row">
+            <div className="col-12">
+              <h3
+                style={{
+                  fontFamily: "Recoleta",
+                  fontWeight: "normal",
+                  fontSize: "30px",
+                  lineHeight: "1.16em",
+                  marginBottom: "20px",
+                }}
+              >
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                  }}
+                >
+                  Vision
+                </span>{" "}
+                PS GmbH
+              </h3>
+              <p style={{ fontSize: "14px" }}>
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                    fontFamily: "Recoleta",
+                  }}
+                >
+                  Anschrift:
+                </span>{" "}
+                Hansa Str. 03, 47058 Duisburg, Deutschland
+              </p>
+
+              {/* Telefon */}
+              <p style={{ fontSize: "14px" }}>
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                    fontFamily: "Recoleta",
+                  }}
+                >
+                  Telefon:
+                </span>{" "}
+                +49 (0) 203 346 893 40
+              </p>
+
+              {/* Fax */}
+              <p style={{ fontSize: "14px" }}>
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                    fontFamily: "Recoleta",
+                  }}
+                >
+                  Fax:
+                </span>{" "}
+                +49 (0) 203 346 893 42
+              </p>
+
+              {/* Email */}
+              <p style={{ fontSize: "14px" }}>
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                    fontFamily: "Recoleta",
+                  }}
+                >
+                  Email:
+                </span>{" "}
+                info@vision-ps.de
+              </p>
+
+              {/* Vorstand */}
+              <p style={{ fontSize: "14px" }}>
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                    fontFamily: "Recoleta",
+                  }}
+                >
+                  Vorstand:
+                </span>{" "}
+                Dipl. Ing. Javid Iqbal
+              </p>
+
+              {/* Registergericht */}
+              <p style={{ fontSize: "14px" }}>
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                    fontFamily: "Recoleta",
+                  }}
+                >
+                  Registergericht:
+                </span>{" "}
+                Amtsgericht Duisburg
+              </p>
+
+              {/* Registernummer */}
+              <p style={{ fontSize: "14px" }}>
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                    fontFamily: "Recoleta",
+                  }}
+                >
+                  Registernummer:
+                </span>{" "}
+                HRB .26023
+              </p>
+
+              {/* Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz */}
+              <p style={{ fontSize: "14px" }}>
+                <span
+                  style={{
+                    color: "#e16817",
+                    position: "relative",
+                    display: "inline-block",
+                    fontFamily: "Recoleta",
+                  }}
+                >
+                  Umsatzsteuer-Identifikationsnummer gemäß § 27 a
+                  Umsatzsteuergesetz:
+                </span>{" "}
+                DE274243305
+              </p>
+
+              {/* Haftungshinweis */}
+              <p
+                style={{
+                  color: "#e16817",
+                  position: "relative",
+                  display: "inline-block",
+                  fontFamily: "Recoleta",
+                  fontWeight: "700",
+                  marginBottom: "0.2rem",
+                }}
+              >
+                Haftungshinweis
+              </p>
+              <p style={{ fontFamily: "Recoleta", fontSize: "14px" }}>
+                Die Inhalte dieser Website werden mit größtmöglicher Sorgfalt
+                erstellt. Der Anbieter übernimmt jedoch keine Gewähr für die
+                Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten
+                Inhalte. Die Nutzung der abrufbaren Inhalte erfolgt auf eigene
+                Gefahr des Nutzers.
+              </p>
+
+              {/* Wir bieten Ihnen */}
+              <p
+                style={{
+                  color: "#e16817",
+                  position: "relative",
+                  display: "inline-block",
+                  fontFamily: "Recoleta",
+                  fontWeight: "700",
+                  marginBottom: "0.2rem",
+                }}
+              >
+                Wir bieten Ihnen
+              </p>
+              <p style={{ fontFamily: "Recoleta", fontSize: "14px" }}>
+                Qualifizierte Mitarbeiter mit aktuellem Ausbildungs- und
+                Entwicklungsstand. Eine Führungsebene, die individuellen und
+                unternehmerischen Geist fördert Ausserdem bemühen wir uns um ein
+                angenehmes Arbeitsklima für alle unsere Mitarbeiter.
+              </p>
+
+              <p style={{ fontFamily: "Recoleta", fontSize: "14px" }}>
+                Wenn Sie unser Team verstärken möchten, dann füllen Sie bitte
+                das nachfolgende Formular aus oder kontaktieren sie uns
+                persönlich.Sobald wir eine passende Stelle für Sie haben, werden
+                wir Sie umgehend benachrichtigen.
+              </p>
+
+              <p style={{ fontFamily: "Recoleta", fontSize: "14px" }}>
+                Wenn Sie Fragen zu unseren Leistungen und / oder Unternehmen
+                haben, nehmen Sie mit uns Kontakt auf.
+              </p>
+            </div>
           </div>
         </div>
       </div>
