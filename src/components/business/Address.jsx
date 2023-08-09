@@ -22,7 +22,7 @@ const Address = () => {
       descriptions: (
         <>
           <p>
-            live chat service <br />
+            Email Us at <br />
             <a href="mailto:info@visgroup.eu" className="webaddress">
               info@visgroup.eu
             </a>

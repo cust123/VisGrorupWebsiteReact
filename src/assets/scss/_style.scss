@@ -148,6 +148,10 @@
   background: var(--red-one);
   transition: all 0.3s ease-in-out;
 }
+
+.scroll-top:hover{
+  transform: scale(1.05) translateY(-5px);
+}
 .scroll-top:after {
   position: absolute;
   z-index: -1;
@@ -2695,27 +2699,28 @@ body .theme-btn-eighteen:hover:before {
   border-radius: 50%;
 }
 .address-block-one .title {
-  font-family: "gorditamedium";
+  font-family: "Recoleta";
   font-size: 24px;
   padding: 20px 0 14px;
   margin-bottom: 0;
 }
 .address-block-one p {
-  font-size: 19px;
-  line-height: 1.65em;
+  font-family: "Recoleta";
+  font-size: 16px;
+  line-height: 1.45em;
   color: #878787;
   margin-bottom: 0;
 }
 .address-block-one p .call {
-  font-size: 22px;
+  font-size: 18px;
   color: var(--red-one);
 }
 .address-block-one p .call:hover {
   text-decoration: underline;
 }
 .address-block-one p .webaddress {
-  color: var(--heading);
-  text-decoration: underline;
+  font-size: 18px;
+  color: var(--red-one);
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Footer One ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .vcamp-footer-one .bg-wrapper {
@@ -4945,10 +4950,12 @@ body .theme-btn-eighteen:hover:before {
   animation: jumpTwo 4s infinite linear;
 }
 .inside-hero-three .page-title {
-  font-size: 72px;
-  line-height: 1.25em;
-  font-weight: 500;
-  margin-bottom: 0;
+  
+  font-family: "Recoleta";
+    font-weight: normal;
+    font-size: 62px;
+    line-height: 1.16em;
+    margin-bottom: 0;
 }
 .inside-hero-three.dark-bg .page-title {
   color: #fff;
@@ -4968,9 +4975,10 @@ body .theme-btn-eighteen:hover:before {
   background: var(--red-one);
 }
 .inside-hero-three p {
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.83em;
   margin-bottom: 0;
+  text-align: justify;
 }
 .inside-hero-three.dark-bg p {
   color: #fff;

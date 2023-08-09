@@ -17,6 +17,7 @@ const ContactUs = () => {
 
       <Header />
 
+      {/* Banner:start */}
       <div className="inside-hero-three">
         <div className="container">
           <div className="row">
@@ -39,11 +40,9 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      {/* Banner:ENd */}
 
-      {/* <!-- /.inside-hero-one --> */}
-
-      {/* main form for contact us  */}
-
+      {/* Contact Information Section:Start */}
       <div className="contact-section-five">
         <div className="container">
           <div className="row">
@@ -87,6 +86,7 @@ const ContactUs = () => {
         </div>
         {/* <!-- /.contact-meta --> */}
       </div>
+      {/* Contact Information Section:End */}
 
       {/* Footer : start */}
       <footer className="vcamp-footer-two pt-150 lg-pt-100">
