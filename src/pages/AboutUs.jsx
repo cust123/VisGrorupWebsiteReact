@@ -32,7 +32,7 @@ const AboutUs = () => {
         }}
       >
         <div className="container">
-          <h2 className="page-title">About Us</h2>
+          <h2 className="page-title">We Are Vis Group</h2>
           <p>Welcome to the Age of Digital Transformation</p>
         </div>
       </div>
@@ -51,7 +51,7 @@ const AboutUs = () => {
             <div className="col-xxl-6 col-xl-7 col-lg-5">
               <div className="text-wrapper">
                 <div className="title-style-five">
-                  <div className="upper-title">ABOUT US</div>
+                  <div className="upper-title">About Us</div>
                   <p className="title">
                     We’ve been helping customer globally.Elevate your digital
                     products and solutions with Vis Group, a leading provider of
