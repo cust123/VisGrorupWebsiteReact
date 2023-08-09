@@ -1,10 +1,9 @@
 import React from "react";
-import footerImg from "../assets/images/assets/ils_03.png";
+
 import Sidebar from "../components/common/header/sidebar/Sidebar";
 import Header from "../components/consulting-agency/Header";
 import CopyrightFooter from "../components/common/footer/CopyrightFooter";
-import FooterMenuList from "../components/common/footer/FooterMenuList";
-import FooterSubscribe from "../components/creative-agency/FooterSubscribe";
+import FooterMenuListTwo from "../components/common/footer/FooterMenuListTwo";
 import { Link } from "react-router-dom";
 import Blog from "../components/consulting-agency/Blog";
 import Seo from "../components/common/seo/Seo";
@@ -17,7 +16,6 @@ const Blogs = () => {
 
       <Sidebar />
 
-     
       <Header />
 
       <div
@@ -30,11 +28,8 @@ const Blogs = () => {
           <h2 className="page-title">Our Blogs</h2>
           <p>We’re empowering WordPress to do great things together</p>
         </div>
-     
       </div>
- 
-     
-      
+
       <div className="blog-section-one mt-180 mb-180 lg-mt-120">
         <div className="container">
           <div className="row">
@@ -47,7 +42,7 @@ const Blogs = () => {
                   </div>
                 </div>
                 {/* End .col */}
-            
+
                 {/* End .col */}
               </div>
               {/* End .row */}
@@ -63,62 +58,39 @@ const Blogs = () => {
           </div>
         </div>
       </div>
-     
-      
-     
-   
-      <div className="vcamp-footer-one box-layout">
-        <div className="bg-wrapper">
-          <div className="container">
-            <div className="row">
-              <div className="col-xxl-11 m-auto">
-                <div className="subscribe-area">
-                  <FooterSubscribe />
-                </div>
-                {/* <!-- /.subscribe-area --> */}
 
-                <div className="top-footer mt-90 md-mt-70">
-                  <div className="row">
-                    <div className="col-lg-4 col-md-2 d-flex justify-content-between flex-column">
-                      <div className="logo">
-                        <Link to="/">
-                          <img
-                            src={
-                              require("../assets/images/logo/vCamp_01.svg")
-                                .default
-                            }
-                            alt="brand"
-                            style={{ width: "127px" }}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    {/* End .col */}
-
-                    <FooterMenuList />
-                    {/* End Footer Menu list */}
-                  </div>
-                </div>
-                {/* <!-- /.top-footer --> */}
-              </div>
-            </div>
-          </div>
-          {/* End .container */}
-          <img src={footerImg} alt="shape" className="shapes illustration" />
-        </div>
-        {/* <!-- /.bg-wrapper --> */}
-
+      {/* Footer : start */}
+      <footer className="vcamp-footer-two pt-150 lg-pt-100">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-11 m-auto">
-              <div className="bottom-footer">
-                <CopyrightFooter />
+            <div className="col-xl-3 col-lg-2 mb-40 d-flex align-items-center justify-content-center">
+              <div className="logo">
+                <Link to="/">
+                  <img
+                    src={require("../assets/images/logo/visLogo.png")}
+                    alt="Vis Logo"
+                    style={{ maxWidth: "200px", height: "auto" }}
+                  />
+                </Link>
+                <p style={{ fontFamily: "Recoleta" }}>
+                  Reprehenderit sunt aliquip laboris dolore enim.
+                </p>
               </div>
             </div>
+            {/* End .col */}
+            <FooterMenuListTwo />
           </div>
         </div>
-      </div>
-      {/* <!-- /.vcamp-footer-one --> */}
+        {/* End .container */}
+
+        <div className="container">
+          <div className="bottom-footer">
+            <CopyrightFooter />
+          </div>
+        </div>
+        {/* End .container */}
+      </footer>
+      {/* Footer : End */}
     </div>
     // End .main-page-wrapper
   );

@@ -3,39 +3,55 @@ import { Link } from "react-router-dom";
 
 const FooterMenuListTwo = ({ className = "" }) => {
   const footerMenuContent = [
+    // UseFull Links
     {
-      id: 1,
-      title: "Links",
-      colClass: "col-lg-3 text-center",
+      id: "usefulLinks",
+      title: "Useful Links",
+      colClass: "col-lg-2 mx-lg-5",
       list: [
         { name: "Home", routeLink: "/" },
-        { name: "Pricing", routeLink: "/" },
-        { name: "About Us", routeLink: "/" },
-        { name: "Service", routeLink: "/" },
-        { name: "Features", routeLink: "/" },
-        { name: "Blog", routeLink: "/" },
+        { name: "About Us", routeLink: "/about-us" },
+        { name: "Services", routeLink: "/services" },
+        { name: "Projects", routeLink: "/projects" },
+        { name: "Blogs", routeLink: "/blogs" },
+        { name: "Contact Us", routeLink: "/contact-us" },
       ],
     },
+
+    // Services
     {
-      id: 2,
+      id: "services",
+      title: "Services",
+      colClass: "col-lg-3",
+      list: [
+        {
+          name: "Network Benchmarking",
+          routeLink: "/services/networkBenchmarking",
+        },
+        {
+          name: "Field Performance Testing",
+          routeLink: "/services/fieldPerformanceTesting",
+        },
+        {
+          name: "Tuner and Media Testing",
+          routeLink: "/services/TunerAndMediaTesting",
+        },
+        {
+          name: "Software Development",
+          routeLink: "/services/softwareDevelopmengt",
+        },
+      ],
+    },
+
+    // Legal
+    {
+      id: "legal",
       title: "Legal",
       colClass: "col-lg-3",
       list: [
-        { name: "Terms of Use", routeLink: "/" },
-        { name: "Terms & Conditions", routeLink: "/" },
-        { name: "Privacy Policy", routeLink: "/" },
-        { name: "Cookie Policy", routeLink: "/" },
-      ],
-    },
-    {
-      id: 3,
-      title: "Legal",
-      colClass: "col-lg-3",
-      list: [
-        { name: "Terms of Use", routeLink: "/" },
-        { name: "Terms & Conditions", routeLink: "/" },
-        { name: "Privacy Policy", routeLink: "/" },
-        { name: "Cookie Policy", routeLink: "/" },
+        { name: "Terms & Conditions", routeLink: "/termsAndConditions" },
+        { name: "Privacy Policy", routeLink: "/privacyPolicy" },
+        { name: "Imprint", routeLink: "/imprint" },
       ],
     },
   ];

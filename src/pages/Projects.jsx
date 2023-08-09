@@ -2,20 +2,24 @@ import React from "react";
 import Sidebar from "../components/common/header/sidebar/Sidebar";
 import Header from "../components/consulting-agency/Header";
 import CopyrightFooter from "../components/common/footer/CopyrightFooter";
-import FooterMenuListTwo from "../components/common/footer/FooterMenuListTwo";
+import TextBlockOne from "./inner-pages/pages/essentials/components/TextBlockOne";
 import CounterUp from "../components/business/CounterUp";
-import { AllServices } from "./inner-pages/pages/support/components/Service2";
+import FeatureSlider from "../components/consulting-agency/FeatureSlider";
+import FeedbackSliderTwo from "../components/business/FeedbackSliderTwo";
 import Partners from "./inner-pages/pages/essentials/components/Partners";
 import { Link } from "react-router-dom";
+import Blog from "../components/service-provider/Blog";
 import FancyBanner from "../components/startup/FancyBanner";
 import Address from "../components/business/Address";
 import Seo from "../components/common/seo/Seo";
-import banner from "../assets/images/media/ServicesBanner.jpg";
+import banner from "../assets/images/media/aboutUsBanner.jpg";
+import AccordionOne from "./inner-pages/pages/essentials/components/AccordionOne";
+import FooterMenuListTwo from "../components/common/footer/FooterMenuListTwo";
 
-const Services = () => {
+const Projects = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Services" />
+      <Seo title="Projects" />
 
       <Sidebar />
 
@@ -28,38 +32,51 @@ const Services = () => {
         }}
       >
         <div className="container">
-          <h2 className="page-title">Our Services</h2>
-          <p style={{ fontWeight: "bold" }}>
-            We’re empowering Services to do great things together
-          </p>
+          <h2 className="page-title">Our Projects</h2>
+          <p>We’re empowering WordPress to do great things together</p>
         </div>
       </div>
       {/* <!-- /.inside-hero-one --> */}
 
-      <div className="vcamp-feature-section-seven style-two mt-10 lg-mt-120">
+      <div className="vcamp-text-block-one mt-200 lg-mt-120 position-static">
         <div className="container">
-          <div className="row">
-            <div
-              className="col-xxl-7 col-xl-9 col-lg-7 col-md-9 m-auto"
-              data-aos="fade-up"
-            >
-              <div className="title-style-one text-center">
-                <h4 className="title">
-                  Explore Our Top Notch Solutions and Services
-                </h4>
-              </div>
-            </div>
-          </div>
+          <TextBlockOne />
         </div>
-        <div className="box-layout mt-40 lg-mt-10">
-          <div className="row">
-            <div className="col-xxl-11 m-auto">
-              <div className="row">
-                <AllServices />
+        {/* End TextBlockOne */}
+        <div className="position-relative">
+          <img
+            src={require("../assets/images/shape/shape_05.svg").default}
+            alt="shape"
+            className="shapes shape-two"
+          />
+        </div>
+      </div>
+
+      <div className="vcamp-text-block-five mt-170 lg-mt-120">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-xxl-6 col-xl-7 col-lg-5">
+              <div className="text-wrapper">
+                <div className="title-style-five">
+                  <div className="upper-title">ABOUT US</div>
+                  <h2 className="title">
+                    We’ve been helping cutomer globally.
+                  </h2>
+                </div>
               </div>
             </div>
+            {/* End .col */}
+
+            <div className="col-xl-5 col-lg-6 ms-auto">
+              <div
+                className="accordion accordion-style-one md-mt-30"
+                id="accordionOne"
+              >
+                <AccordionOne />
+              </div>
+            </div>
+            {/* End .col */}
           </div>
-          {/* <!-- /.box-layout --> */}
         </div>
       </div>
 
@@ -84,7 +101,13 @@ const Services = () => {
 				Vcamp Feature Section Five
 			============================================== 
 			--> */}
-
+      <div className="vcamp-feature-section-five mt-100 lg-mt-80">
+        {/* End .container */}
+        <div className="arrow-none">
+          <FeatureSlider />
+        </div>
+        {/* End .feature_slider_one */}
+      </div>
       {/* <!-- /.vcamp-feature-section-five --> */}
 
       {/* <!--
@@ -123,7 +146,28 @@ const Services = () => {
 				Feedback Slider Two
 			=====================================================
 			--> */}
+      <div className="feedback-section-two box-layout mt-110 lg-mt-50">
+        <div className="bg-wrapper">
+          <div className="container">
+            <div className="row align-items-center justify-content-center">
+              <div className="col-xl-7 col-lg-6 col-md-8 m-auto">
+                <div className="title-style-one text-center ">
+                  <h2 className="title">
+                    What’s our <span>client</span> say about us.
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- /.container --> */}
 
+          <div className="feedback_slider_seven arrow-none">
+            <FeedbackSliderTwo />
+          </div>
+          {/* <!-- /.feedback_slider_two --> */}
+        </div>
+        {/* <!-- /.bg-wrapper --> */}
+      </div>
       {/* <!-- /.feedback-section-two --> */}
 
       {/* <!--
@@ -131,7 +175,38 @@ const Services = () => {
 				Blog Section One
 			=====================================================
 			--> */}
+      <div className="blog-section-one mt-180 lg-mt-120">
+        <div className="container">
+          <div className="row">
+            <div className="col-xxl-11 m-auto">
+              <div className="row align-items-center">
+                <div className="col-xl-5 col-md-6 col-sm-7">
+                  <div className="title-style-five">
+                    <div className="upper-title">Latest News</div>
+                    <h2 className="title">Our Blog</h2>
+                  </div>
+                </div>
+                {/* End .col */}
+                <div className="col-xl-7 col-md-6 col-sm-5 text-sm-end text-start">
+                  <Link to="/blog-v2" className="theme-btn-three xs-mt-30">
+                    Check our all news <i className="fas fa-angle-right"></i>
+                  </Link>
+                </div>
+                {/* End .col */}
+              </div>
+              {/* End .row */}
 
+              <div className="mt-100 lg-mt-60">
+                <div className="row">
+                  <Blog />
+                </div>
+              </div>
+              {/* End .row */}
+            </div>
+            {/* End .col */}
+          </div>
+        </div>
+      </div>
       {/* <!-- /.blog-section-one --> */}
 
       {/* <!--
@@ -166,6 +241,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      {/* <!-- /.contact-section-one --> */}
 
       {/* Footer : start */}
       <footer className="vcamp-footer-two pt-150 lg-pt-100">
@@ -204,4 +280,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Projects;

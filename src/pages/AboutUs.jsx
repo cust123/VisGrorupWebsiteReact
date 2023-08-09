@@ -1,10 +1,7 @@
 import React from "react";
-import footerImg from "../assets/images/assets/ils_03.png";
 import Sidebar from "../components/common/header/sidebar/Sidebar";
 import Header from "../components/consulting-agency/Header";
 import CopyrightFooter from "../components/common/footer/CopyrightFooter";
-import FooterMenuList from "../components/common/footer/FooterMenuList";
-import FooterSubscribe from "../components/creative-agency/FooterSubscribe";
 import TextBlockOne from "./inner-pages/pages/essentials/components/TextBlockOne";
 import CounterUp from "../components/business/CounterUp";
 import FeatureSlider from "../components/consulting-agency/FeatureSlider";
@@ -17,6 +14,7 @@ import Address from "../components/business/Address";
 import Seo from "../components/common/seo/Seo";
 import banner from "../assets/images/media/aboutUsBanner.jpg";
 import AccordionOne from "./inner-pages/pages/essentials/components/AccordionOne";
+import FooterMenuListTwo from "../components/common/footer/FooterMenuListTwo";
 
 const AboutUs = () => {
   return (
@@ -25,7 +23,6 @@ const AboutUs = () => {
 
       <Sidebar />
 
-     
       <Header />
 
       <div
@@ -38,12 +35,9 @@ const AboutUs = () => {
           <h2 className="page-title">Inside Story</h2>
           <p>We’re empowering WordPress to do great things together</p>
         </div>
-     
       </div>
       {/* <!-- /.inside-hero-one --> */}
 
- 
- 
       <div className="vcamp-text-block-one mt-200 lg-mt-120 position-static">
         <div className="container">
           <TextBlockOne />
@@ -85,7 +79,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
 
       {/* <!-- /.vcamp-text-block-one --> */}
 
@@ -250,63 +243,38 @@ const AboutUs = () => {
       </div>
       {/* <!-- /.contact-section-one --> */}
 
-      {/* <!--
-        =====================================================
-         Footer
-        =====================================================
-        --> */}
-      <div className="vcamp-footer-one box-layout">
-        <div className="bg-wrapper">
-          <div className="container">
-            <div className="row">
-              <div className="col-xxl-11 m-auto">
-                <div className="subscribe-area">
-                  <FooterSubscribe />
-                </div>
-                {/* <!-- /.subscribe-area --> */}
-
-                <div className="top-footer mt-90 md-mt-70">
-                  <div className="row">
-                    <div className="col-lg-4 col-md-2 d-flex justify-content-between flex-column">
-                      <div className="logo">
-                        <Link to="/">
-                          <img
-                            src={
-                              require("../assets/images/logo/vCamp_01.svg")
-                                .default
-                            }
-                            alt="brand"
-                            style={{ width: "127px" }}
-                          />
-                        </Link>
-                      </div>
-                    </div>
-                    {/* End .col */}
-
-                    <FooterMenuList />
-                    {/* End Footer Menu list */}
-                  </div>
-                </div>
-                {/* <!-- /.top-footer --> */}
-              </div>
-            </div>
-          </div>
-          {/* End .container */}
-          <img src={footerImg} alt="shape" className="shapes illustration" />
-        </div>
-        {/* <!-- /.bg-wrapper --> */}
-
+      {/* Footer : start */}
+      <footer className="vcamp-footer-two pt-150 lg-pt-100">
         <div className="container">
           <div className="row">
-            <div className="col-xxl-11 m-auto">
-              <div className="bottom-footer">
-                <CopyrightFooter />
+            <div className="col-xl-3 col-lg-2 mb-40 d-flex align-items-center justify-content-center">
+              <div className="logo">
+                <Link to="/">
+                  <img
+                    src={require("../assets/images/logo/visLogo.png")}
+                    alt="Vis Logo"
+                    style={{ maxWidth: "200px", height: "auto" }}
+                  />
+                </Link>
+                <p style={{ fontFamily: "Recoleta" }}>
+                  Reprehenderit sunt aliquip laboris dolore enim.
+                </p>
               </div>
             </div>
+            {/* End .col */}
+            <FooterMenuListTwo />
           </div>
         </div>
-      </div>
-      {/* <!-- /.vcamp-footer-one --> */}
+        {/* End .container */}
+
+        <div className="container">
+          <div className="bottom-footer">
+            <CopyrightFooter />
+          </div>
+        </div>
+        {/* End .container */}
+      </footer>
+      {/* Footer : End */}
     </div>
     // End .main-page-wrapper
   );

@@ -4385,18 +4385,27 @@ body .theme-btn-eighteen:hover:before {
   background: #121212;
 }
 .vcamp-footer-two .title {
-  font-size: 16px;
-  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+
   color: rgba(0, 0, 0, 0.7);
   letter-spacing: 3px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   margin-bottom: 0;
+  color: var(--orange-one);
 }
+
 .vcamp-footer-two .footer-list a {
-  line-height: 40px;
+  line-height: 30px;
+  font-family: "Recoleta";
   color: var(--heading);
   transition: all 0.3s ease-in-out;
+  
 }
+// .vcamp-footer-two .footer-list {
+//   text-align: center;
+  
+// }
 .vcamp-footer-two .footer-list a:hover,
 .vcamp-footer-two.dark-footer .footer-list a:hover {
   text-decoration: underline;

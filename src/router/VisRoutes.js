@@ -10,6 +10,7 @@ import Home from "../pages/home-pages/Home";
 import NotFound from "../pages/NotFound";
 import AboutUs from "../pages/AboutUs";
 import Services from "../pages/Services";
+import Projects from "../pages/Projects";
 import Blogs from "../pages/Blogs";
 import ContactUs from "../pages/ContactUs";
 
@@ -27,6 +28,10 @@ const VisRoutes = () => {
         {/* Services */}
 
         <Route path="/services" element={<Services />} />
+
+        {/* Projects */}
+
+        <Route path="/projects" element={<Projects />} />
 
         {/* Blogs */}
 

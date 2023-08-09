@@ -238,7 +238,9 @@ const Home = () => {
                     style={{ maxWidth: "200px", height: "auto" }}
                   />
                 </Link>
-                <p>Reprehenderit sunt aliquip laboris dolore enim.</p>
+                <p style={{ fontFamily: "Recoleta" }}>
+                  Reprehenderit sunt aliquip laboris dolore enim.
+                </p>
               </div>
             </div>
             {/* End .col */}
