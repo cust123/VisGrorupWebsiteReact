@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
-import heroAvatar from "../../../../../assets/images/media/img_40.jpg";
+import heroAvatar from "../../../../../assets/images/media/networktower.jpg";
 
 const TextBlockOne = () => {
   const [isOpen, setOpen] = useState(false);
