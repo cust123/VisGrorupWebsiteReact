@@ -16,6 +16,10 @@ const pagesMegaMenuData = [
         name: "Global Certification Forum",
         routeLink: "/services/GlobalCertificationForum",
       },
+      {
+        name: "SoS Calls Testing",
+        routeLink: "/services/SoSCallsTesting",
+      },
     ],
   },
 
@@ -24,9 +28,12 @@ const pagesMegaMenuData = [
     id: "servicesInfotainmentId",
     title: "Infotainment",
     menuList: [
-      { name: "Testimonial Classic", routeLink: "/testimonial-v1" },
-      { name: "Testimonial Standard", routeLink: "/testimonial-v2" },
-      { name: "Testimonial Basic: Dark", routeLink: "/testimonial-v3" },
+      { name: "GPS Testing", routeLink: "/services/GPSTesting" },
+      {
+        name: "Tuner and Media Testing",
+        routeLink: "/services/TunerandMediaTesting",
+      },
+      { name: "HMI Testing", routeLink: "/services/HMITesting" },
     ],
   },
 
@@ -35,9 +42,14 @@ const pagesMegaMenuData = [
     id: "servicesSoftwareDevelopmentId",
     title: "Software Development",
     menuList: [
-      { name: "Testimonial Classic", routeLink: "/testimonial-v1" },
-      { name: "Testimonial Standard", routeLink: "/testimonial-v2" },
-      { name: "Testimonial Basic: Dark", routeLink: "/testimonial-v3" },
+      {
+        name: "Web Apps Development",
+        routeLink: "/services/WebAppsDevelopment",
+      },
+      {
+        name: "Mobile Apps Development",
+        routeLink: "/services/MobileAppsDevelopment",
+      },
     ],
   },
 
@@ -46,9 +58,16 @@ const pagesMegaMenuData = [
     id: "servicesQualityIsuranceId",
     title: "Quality Isurance",
     menuList: [
-      { name: "Testimonial Classic", routeLink: "/testimonial-v1" },
-      { name: "Testimonial Standard", routeLink: "/testimonial-v2" },
-      { name: "Testimonial Basic: Dark", routeLink: "/testimonial-v3" },
+      { name: "Manual Testing ", routeLink: "/services/ManualTesting" },
+      { name: "Automation Testing", routeLink: "/services/AutomationTesting" },
+      {
+        name: "Performance Testing",
+        routeLink: "/services/PerformanceTesting",
+      },
+      {
+        name: "API Testing",
+        routeLink: "/services/APITesting",
+      },
     ],
   },
 ];
