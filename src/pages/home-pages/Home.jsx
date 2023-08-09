@@ -65,7 +65,13 @@ const Home = () => {
                 <p className="meta-info-text ">
                   Vis Group offers Services in Telecommunication, Network
                   Benchmarking, infotainment systems testing, Quality Assurance
-                  and Software Development to its global clients.
+                  and Software Development to its global clients. Vis Group is
+                  committed to helping our clients navigate complex and
+                  technical aspects of technology to yield a number of benefits;
+                  such as competitive advantage, efficiency, enhancement,
+                  productivity, reliability, and security of their digital
+                  solutions while keeping in mind the time and budget
+                  constraints.
                 </p>
                 <Link to="/services" className="theme-btn-four ripple-btn">
                   View All Services{" "}
