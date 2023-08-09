@@ -35,7 +35,7 @@ const Home = () => {
               We are helping clients to create Durable and high quality
               Sloutions with our talented resources and experts.
             </p>
-            <Link to="/contact-v3" className="theme-btn-eleven ripple-btn">
+            <Link to="/contact-us" className="theme-btn-eleven ripple-btn">
               Consult with an expert now!
             </Link>
           </div>

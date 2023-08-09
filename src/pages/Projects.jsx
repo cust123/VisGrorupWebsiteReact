@@ -257,7 +257,9 @@ const Projects = () => {
                   />
                 </Link>
                 <p style={{ fontFamily: "Recoleta" }}>
-                  Reprehenderit sunt aliquip laboris dolore enim.
+                  We offer digital services in network benchmarking, software
+                  development, and mobile network testing. Contact us for
+                  details.
                 </p>
               </div>
             </div>
